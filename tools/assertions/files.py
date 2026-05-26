@@ -1,3 +1,5 @@
+from email import message
+
 import httpx
 
 from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema, InternalErrorResponseSchema
@@ -7,7 +9,7 @@ from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 
 
-def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
+def assert_create_file_response(response: CreateFileResponseSchema, request: CreateFileRequestSchema):
     """
     Проверяет структуру ответа на запрос создания файла.
     :param request: запрос на создание файла
@@ -20,7 +22,7 @@ def assert_create_file_response(request: CreateFileRequestSchema, response: Crea
     assert_equal(response.file.directory, request.directory, name="directory")
     assert_file_is_accessible(str(response.file.url))
 
-def assert_file_is_accessible(url: str):
+def assert_file_is_accessible(url: str, ):
     """
     Проверяет доступность файла по ссылке
     :param url: ссылка на файл
@@ -105,3 +107,26 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     """
     expected = InternalErrorResponseSchema(details="File not found")
     assert_internal_error_response(actual, expected)
+
+
+def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorResponseSchema):
+    """
+
+    :param actual:
+    :return:
+    """
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="uuid_parsing",
+                location=["path", "file_id"],
+                message="Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
+                input="incorrect-file-id",
+                context={
+                    "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"
+                }
+            )
+        ]
+    )
+
+    assert_validation_error_response(actual, expected)
