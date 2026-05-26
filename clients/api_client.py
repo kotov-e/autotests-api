@@ -4,7 +4,7 @@ from typing import Any
 from httpx._types import RequestData, RequestFiles
 
 
-class ApiClient:
+class APIClient:
     def __init__(self, client: Client):
         """
         Базовый API клиент для выполнения запросов

@@ -1,40 +1,46 @@
-
-from clients.api_client import ApiClient
-from httpx import Response
 from typing import TypedDict
 
-class LoginRequestDict(TypedDict):
-    """
-    Описание структуры запроса для логина
-    """
-    phoneNumberOrEmail: str
-    password: str
+from httpx import Response
 
+from clients.api_client import APIClient
+from clients.public_http_builder import get_public_http_client
+from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema
 
-class RefreshTokenRequestDict(TypedDict):
+class AuthenticationClient(APIClient):
     """
-    Описание структуры запроса для обновления токена
+    Клиент для работы с /api/v1/authentication
     """
-    refreshToken: str
 
-
-class AuthenticationClient(ApiClient):
-    """
-    Класс клиента для работы с аутентификацией
-    """
-    def login_api(self, request: LoginRequestDict) -> Response:
+    def login_api(self, request: LoginRequestSchema) -> Response:
         """
-        Метод для логина
-        :param request: словарь с данными для логина
-        :return: ответ от сервера в виде httpx Response
-        """
-        return self.post("/api/auth/login", json=request)
+        Метод выполняет аутентификацию пользователя.
 
-    def refresh_token_api(self, request: RefreshTokenRequestDict) -> Response:
+        :param request: Словарь с email и password.
+        :return: Ответ от сервера в виде объекта httpx.Response
         """
-        Метод для обновления токена
-        :param request: словарь с данными для обновления токена
-        :return: ответ от сервера в виде httpx Response
-        """
-        return self.post("/api/auth/refresh-token", json=request)
+        return self.post("/api/v1/authentication/login", json=request.model_dump(by_alias=True))
 
+    # Добавили метод login
+    def login(self, request: LoginRequestSchema) -> LoginResponseSchema:
+        response = self.login_api(request)  # Отправляем запрос на аутентификацию
+        return LoginResponseSchema.model_validate_json(response.text)  # Извлекаем JSON из ответа
+
+
+    def refresh_api(self, request: RefreshRequestSchema) -> Response:
+        """
+        Метод обновляет токен авторизации.
+
+        :param request: Словарь с refreshToken.
+        :return: Ответ от сервера в виде объекта httpx.Response
+        """
+        return self.post("/api/v1/authentication/refresh", json=request.model_dump(by_alias=True))
+
+
+
+def get_authentication_client() -> AuthenticationClient:
+    """
+    Функция создаёт экземпляр AuthenticationClient с уже настроенным HTTP-клиентом.
+
+    :return: Готовый к использованию AuthenticationClient.
+    """
+    return AuthenticationClient(client=get_public_http_client())

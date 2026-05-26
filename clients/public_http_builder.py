@@ -1,14 +1,8 @@
 from httpx import Client
 
 
-
-
-
 def get_public_http_client() -> Client: # без заголовков
     return Client(
         timeout=100,
-        base_url=f"{HOST}"
+        base_url="http://localhost:8000"
     )
-
-
-
