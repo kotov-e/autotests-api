@@ -39,9 +39,9 @@ def assert_file(actual: FileSchema, expected: FileSchema):
     :return: AssertionError, если хотя бы одно поле не совпадает
     """
     assert_equal(actual.id, expected.id, name="id")
-    assert_equal(actual.url, expected.url, name="id")
     assert_equal(actual.filename, expected.filename, name="filename")
     assert_equal(actual.directory, expected.directory, name="directory")
+    assert_equal(actual.url, expected.url, name="id")
 
 
 def assert_get_file_response(

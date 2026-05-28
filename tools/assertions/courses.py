@@ -1,5 +1,5 @@
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, CourseSchema, \
-    GetCoursesResponseSchema, CreateCourseResponseSchema
+    GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
@@ -51,4 +51,21 @@ def assert_get_courses_response(
 
     for index, create_course_responses in enumerate(create_course_responses):
         assert_course(get_courses_response.courses[index], create_course_responses.course)
+
+
+def assert_created_course_response(response: CreateCourseResponseSchema, request: CreateCourseRequestSchema):
+    """
+    Функция проверки ответа на создание курса
+    :param response: данные ответа
+    :param request: данные запроса
+    :return: AssertionError, если хотя бы одно из полей не совпадает
+    """
+    assert_equal(actual=response.course.title, expected=request.title, name="title")
+    assert_equal(actual=response.course.max_score, expected=request.max_score, name="max_score")
+    assert_equal(actual=response.course.min_score, expected=request.min_score, name="min_score")
+    assert_equal(actual=response.course.description, expected=request.description, name="description")
+    assert_equal(actual=response.course.estimated_time, expected=request.estimated_time, name="estimated_time")
+    assert_equal(actual=response.course.preview_file.id, expected=request.preview_file_id, name="preview_file.id")
+    assert_equal(actual=response.course.created_by_user.id, expected=request.created_by_user_id, name="created_by_user.id")
+
 

@@ -52,6 +52,8 @@ def assert_length(actual: Sized, expected: Sized, name: str):
     :param name: название поля
     :return: AssertionError если длины не совпадают
     """
+    print(f'*********************'
+          f'actual: {len(actual)}, expected: {len(expected)}')
     assert len(actual) == len(expected), (
         f"Incorrect object length: '{name}' \n"
         f"Expected length: {len(expected)} \n"
