@@ -1,14 +1,14 @@
 import pytest
 
 from fixtures.users import UserFixture
-from clients.users.private_users_client import get_private_users_client, PrivateUsersClient
-from clients.users.public_users_client import get_public_users_client, PublicUsersClient
+from clients.users.private_users_client import PrivateUsersClient
+from clients.users.public_users_client import PublicUsersClient
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from http import HTTPStatus
 
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
-from tools.assertions.users import assert_create_user_response, assert_user, assert_get_user_response
+from tools.assertions.users import assert_create_user_response, assert_get_user_response
 from tools.fakers import fake
 
 
@@ -16,9 +16,8 @@ from tools.fakers import fake
 @pytest.mark.regression
 class TestUsers:
     #@pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
-    def test_create_user(self, email: str, public_users_client: PublicUsersClient):
-        request = CreateUserRequestSchema(
-            email=fake.email(domain=email)
+    def test_create_user(self, public_users_client: PublicUsersClient):
+        request = CreateUserRequestSchema( #email=fake.email(domain=email)
         )
         response = public_users_client.create_user_api(request)  # возвращает ответ от сервера
         response_data = CreateUserResponseSchema.model_validate_json(
@@ -38,6 +37,6 @@ class TestUsers:
         response_data = GetUserResponseSchema.model_validate_json(response.text)
 
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
-        assert_get_user_response(create_user_response=function_user.response, get_user_me_response=response_data)
+        assert_get_user_response(get_user_me_response=response_data, create_user_response=function_user.response)
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
