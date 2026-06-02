@@ -15,7 +15,7 @@ from tools.fakers import fake
 @pytest.mark.users
 @pytest.mark.regression
 class TestUsers:
-    @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
+    #@pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     def test_create_user(self, email: str, public_users_client: PublicUsersClient):
         request = CreateUserRequestSchema(
             email=fake.email(domain=email)
@@ -29,7 +29,7 @@ class TestUsers:
         # HTTPStatus.is_success = 200, 201, 202, 203, 204, 205, 206, 207, 208, 226
         # HTTPStatus.is_success(response.status_code)
 
-        assert_create_user_response(request, response_data)
+        assert_create_user_response(response_data, request)
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 

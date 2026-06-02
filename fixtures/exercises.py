@@ -28,8 +28,11 @@ def function_exercise(
         function_course: CourseFixture
 ) -> ExerciseFixture:
     request = CreateExerciseRequestSchema(
-        courseId=function_course.response.course.id,
-        orderIndex=1
+        course_id=function_course.response.course.id,
+        order_index=1
                 )
+
+
+
     response = exercises_client.create_exercise(request)
     return ExerciseFixture(request=request, response=response)
