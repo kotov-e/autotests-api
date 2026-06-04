@@ -4,8 +4,10 @@ from clients.exercises.exercises_schema import CreateExerciseResponseSchema, Cre
     GetExerciseIdResponseSchema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
+import allure
 
 
+@allure.step("Check exercise")
 def assert_exercise(response: ExerciseSchema, request: ExerciseSchema):
     """
     Проверяет, что ответ на создание задания соответствует ожидаемому
@@ -22,6 +24,7 @@ def assert_exercise(response: ExerciseSchema, request: ExerciseSchema):
     assert_equal(actual=response.estimated_time, expected=request.estimated_time, name="estimated_time")
 
 
+@allure.step("Check create exercise response")
 def assert_create_exercise_response(response: CreateExerciseResponseSchema, request: CreateExerciseRequestSchema):
     """
     Проверяет, что ответ на создание задания соответствует ожидаемому
@@ -38,6 +41,7 @@ def assert_create_exercise_response(response: CreateExerciseResponseSchema, requ
     assert_equal(actual=response.exercise.estimated_time, expected=request.estimated_time, name="estimated_time")
 
 
+@allure.step("Check get exercises response")
 def assert_get_exercises_response(
         get_exercises_response: GetExerciseResponseSchema,
         create_exercises_responses: list[CreateExerciseResponseSchema]
@@ -54,8 +58,9 @@ def assert_get_exercises_response(
         assert_exercise(get_exercises_response.exercises[index], create_exercises_responses.exercise)
 
 
-
-def assert_get_exercise_id_response(response: GetExerciseIdResponseSchema, request: CreateExerciseRequestSchema, exercise_id: str):
+@allure.step("Check get exercise id response")
+def assert_get_exercise_id_response(response: GetExerciseIdResponseSchema, request: CreateExerciseRequestSchema,
+                                    exercise_id: str):
     """
     Проверяет, что ответ на получение задания соответствует ожидаемому
     :param response: ответ на получение задания
@@ -73,6 +78,7 @@ def assert_get_exercise_id_response(response: GetExerciseIdResponseSchema, reque
     assert_equal(response.exercise.id, exercise_id, "id")
 
 
+@allure.step("Check update exercise response")
 def assert_update_exercise_response(response: UpdateExerciseResponseSchema, request: UpdateExerciseRequestSchema):
     """
     Проверяет, что ответ на обновление задания соответствует ожидаемому
@@ -88,6 +94,7 @@ def assert_update_exercise_response(response: UpdateExerciseResponseSchema, requ
     assert_equal(actual=response.exercise.estimated_time, expected=request.estimated_time, name="estimated_time")
 
 
+@allure.step("Check exercise not found response")
 def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     """
     Функция для проверки ошибки, если задание не найдено
@@ -96,4 +103,3 @@ def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     """
     expected = InternalErrorResponseSchema(details="Exercise not found")
     assert_internal_error_response(actual, expected)
-
