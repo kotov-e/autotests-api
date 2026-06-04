@@ -3,8 +3,10 @@ from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCour
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
+import allure
 
 
+@allure.step("Check updated course response")
 def assert_updated_courses_response(response: UpdateCourseResponseSchema, request: UpdateCourseRequestSchema):
     """
     Функция проверки ответа на обновление курса
@@ -19,6 +21,7 @@ def assert_updated_courses_response(response: UpdateCourseResponseSchema, reques
     assert_equal(actual=response.course.estimated_time, expected=request.estimated_time, name="estimated_time")
 
 
+@allure.step("Check course")
 def assert_course(actual: CourseSchema, expected: CourseSchema):
     """
     Функция проверки полей курса
@@ -37,6 +40,7 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     assert_user(actual.created_by_user, expected.created_by_user)
 
 
+@allure.step("Check get courses response")
 def assert_get_courses_response(
         get_courses_response: GetCoursesResponseSchema,
         create_course_responses: list[CreateCourseResponseSchema]
@@ -52,7 +56,7 @@ def assert_get_courses_response(
     for index, create_course_responses in enumerate(create_course_responses):
         assert_course(get_courses_response.courses[index], create_course_responses.course)
 
-
+@allure.step("Check created course response")
 def assert_created_course_response(response: CreateCourseResponseSchema, request: CreateCourseRequestSchema):
     """
     Функция проверки ответа на создание курса
@@ -65,7 +69,6 @@ def assert_created_course_response(response: CreateCourseResponseSchema, request
     assert_equal(actual=response.course.min_score, expected=request.min_score, name="min_score")
     assert_equal(actual=response.course.description, expected=request.description, name="description")
     assert_equal(actual=response.course.estimated_time, expected=request.estimated_time, name="estimated_time")
-    assert_equal(actual=response.course.preview_file.id, expected=request.preview_file_id, name="preview_file.id")
-    assert_equal(actual=response.course.created_by_user.id, expected=request.created_by_user_id, name="created_by_user.id")
-
-
+    assert_equal(actual=response.course.preview_file.id, expected=request.preview_file_id, name="preview_file_id")
+    assert_equal(actual=response.course.created_by_user.id, expected=request.created_by_user_id,
+                 name="created_by_user_id")

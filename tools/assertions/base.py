@@ -1,5 +1,8 @@
 from typing import Any, Sized # Sized - те типы данных, которые поддерживают метод __len__ (у которых есть длина)
+import allure
 
+
+@allure.step("Check that response status code is equal to {expected}")
 def assert_status_code(actual: int, expected: int) -> None:
     """
     Проверка факртического и ожидаемого статус кода
@@ -14,7 +17,7 @@ def assert_status_code(actual: int, expected: int) -> None:
         f"Actual status code: {actual}"
     )
 
-
+@allure.step("Check that {name} equals to {expected}")
 def assert_equal(actual: Any, expected: Any, name: str) -> None:
     """
     Проверка фактического и ожидаемого значения
@@ -30,6 +33,7 @@ def assert_equal(actual: Any, expected: Any, name: str) -> None:
         f"Actual value: {actual}"
     )
 
+@allure.step("Check that {name} is true")
 def assert_is_true(actual: Any, name: str):
     """
     Проверяет, что фактическое значение является истинным.
@@ -52,9 +56,9 @@ def assert_length(actual: Sized, expected: Sized, name: str):
     :param name: название поля
     :return: AssertionError если длины не совпадают
     """
-
-    assert len(actual) == len(expected), (
-        f"Incorrect object length: '{name}' \n"
-        f"Expected length: {len(expected)} \n"
-        f"Actual length: {len(actual)}"
-    )
+    with allure.step(f"Check that length of {name} equals to {len(expected)}"):
+        assert len(actual) == len(expected), (
+            f"Incorrect object length: '{name}' \n"
+            f"Expected length: {len(expected)} \n"
+            f"Actual length: {len(actual)}"
+        )
