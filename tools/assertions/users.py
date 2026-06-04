@@ -2,8 +2,9 @@
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, UserSchema, \
     GetUserResponseSchema
 from tools.assertions.base import assert_equal
+import allure
 
-
+@allure.step("Check create user response")
 def assert_create_user_response(response: CreateUserResponseSchema, request: CreateUserRequestSchema):
     """
     Проверяет, что ответ на создание пользователя соответствует запросу
@@ -11,12 +12,13 @@ def assert_create_user_response(response: CreateUserResponseSchema, request: Cre
     :param response: Ответ на запрос с данными пользователя
     :raises AssertionError: Если хотя бы одно поле не совпадает
     """
-    assert_equal(actual=response.user.email, expected=request.email, name="User Email")
-    assert_equal(actual=response.user.last_name, expected=request.last_name, name="last_name")
+    assert_equal(actual=response.user.email, expected=request.email, name="email")
     assert_equal(actual=response.user.first_name, expected=request.first_name, name="first_name")
+    assert_equal(actual=response.user.last_name, expected=request.last_name, name="last_name")
     assert_equal(actual=response.user.middle_name, expected=request.middle_name, name="middle_name")
 
 
+@allure.step("Check user")
 def assert_user(actual: UserSchema, expected: UserSchema):
     """
     Проверяет, что пользователь совпадает с ожидаемым
@@ -30,7 +32,7 @@ def assert_user(actual: UserSchema, expected: UserSchema):
     assert_equal(actual=actual.first_name, expected=expected.first_name, name="first_name")
     assert_equal(actual=actual.middle_name, expected=expected.middle_name, name="middle_name")
 
-
+@allure.step("Check get user response")
 def assert_get_user_response(get_user_me_response: GetUserResponseSchema, create_user_response: CreateUserResponseSchema):
     """
     Проверяет, что ответ на получение пользователя совпадает с ответом на создание пользователя
