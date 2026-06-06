@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     test_data: TestDataConfig
     http_client: HTTPClientConfig
 
-#os.environ.setdefault("HTTP_CLIENT.TIMEOUT", "200") # наибольший приоритет
+#os.environ.setdefault("HTTP_CLIENT.TIMEOUT", "200") # приоритет: переменные окружения -> .env файл -> значения по умолчанию
 
 settings = Settings() # глобальная переменная, не через фикстуру
 
