@@ -27,6 +27,7 @@ from allure_commons.types import Severity
 @allure.suite(AllureFeature.USERS)
 class TestUsers:
 
+
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.tag(AllureTag.CREATE_ENTITY) # UPPERCASE_SNAKE_CASE
     @allure.story(AllureStory.CREATE_ENTITY)

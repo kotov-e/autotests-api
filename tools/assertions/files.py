@@ -1,24 +1,23 @@
-from email import message
-
 import httpx
+import allure
 
 from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema, InternalErrorResponseSchema
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
     GetFileResponseSchema
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
-import allure
+from config import settings
 
 
 @allure.step("Check create file response")
 def assert_create_file_response(response: CreateFileResponseSchema, request: CreateFileRequestSchema):
     """
-    Проверяет структуру ответа на запрос создания файла.
+    Проверяет структуру ответа на запрос создания файла
     :param request: запрос на создание файла
     :param response: ответ с данными файла
     :return: AssertionError, если хотя бы одно поле не совпадает
     """
-    expected_url = f"http://localhost:8000/static/{request.directory}/{request.filename}"
+    expected_url = f"{settings.http_client.client_url}static/{request.directory}/{request.filename}"
     assert_equal(str(response.file.url), expected_url, name="url")
     assert_equal(response.file.filename, request.filename, name="filename")
     assert_equal(response.file.directory, request.directory, name="directory")
@@ -67,7 +66,7 @@ def assert_get_file_response(
 @allure.step("Check create file with empty filename response")
 def assert_create_file_with_empty_filename_response(actual: ValidationErrorResponseSchema):
     """
-    Проверяет, что ответ на создание файла с пустым именем содержит ожидаемую ошибку.
+    Проверяет, что ответ на создание файла с пустым именем содержит ожидаемую ошибку
     :param actual: ответ от API с ошибкой валидации, которую необходимо проверить
     :return: AssertionError, если фактический ответ не совпадает с ожидаемым
     """
@@ -89,7 +88,7 @@ def assert_create_file_with_empty_filename_response(actual: ValidationErrorRespo
 @allure.step("Check create file with empty directory response")
 def assert_create_file_with_empty_directory_response(actual: ValidationErrorResponseSchema):
     """
-    Проверяет, что ответ на создание файла с пустой директорией содержит ожидаемую ошибку.
+    Проверяет, что ответ на создание файла с пустой директорией содержит ожидаемую ошибку
     :param actual: ответ от API с ошибкой валидации, которую необходимо проверить
     :return: AssertionError, если фактический ответ не совпадает с ожидаемым
     """
