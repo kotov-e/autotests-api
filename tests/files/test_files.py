@@ -18,6 +18,7 @@ from tools.allure.tags import AllureTag
 from allure_commons.types import Severity
 from config import settings
 
+
 @pytest.mark.files
 @pytest.mark.regression
 @allure.tag(AllureTag.FILES, AllureTag.REGRESSION)
@@ -41,6 +42,7 @@ class TestFiles:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @pytest.mark.xdist_group(name="files-group") # запустит один воркер, последовательно в одном потоке, просто пример
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Get file")
@@ -53,6 +55,24 @@ class TestFiles:
         assert_get_file_response(response_data, function_file.response)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @pytest.mark.xdist_group(name="files-group") # запустит один воркер, последовательно в одном потоке, просто пример
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete file")
+    @allure.severity(Severity.NORMAL)
+    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
+        delete_response = files_client.delete_file_api(
+            function_file.response.file.id)  # function_file - это фикстура, создаем файл, возвращаем его ид и удаляем
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = files_client.get_file_api(function_file.response.file.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+        assert_file_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
@@ -87,23 +107,6 @@ class TestFiles:
         assert_create_file_with_empty_directory_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-
-    @allure.tag(AllureTag.DELETE_ENTITY)
-    @allure.story(AllureStory.DELETE_ENTITY)
-    @allure.title("Delete file")
-    @allure.severity(Severity.NORMAL)
-    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        delete_response = files_client.delete_file_api(
-            function_file.response.file.id)  # function_file - это фикстура, создаем файл, возвращаем его ид и удаляем
-        assert_status_code(delete_response.status_code, HTTPStatus.OK)
-
-        get_response = files_client.get_file_api(function_file.response.file.id)
-        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
-
-        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
-        assert_file_not_found_response(get_response_data)
-
-        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
