@@ -4,4 +4,6 @@ pytest_plugins = (
     "fixtures.files",
     "fixtures.courses",
     "fixtures.exercises",
+
+    "fixtures.allure"
 ) # фикстуры доступны глобально для любого теста
