@@ -1,10 +1,13 @@
 from enum import Enum
 
 class APIRoutes(str, Enum): # URI
+    """
+    URI str
+    """
     USERS = "/api/v1/users"
     FILES = "/api/v1/files"
     COURSES = "/api/v1/courses"
-    EXERCISES = "/api/v1/exerciese"
+    EXERCISES = "/api/v1/exercises"
     AUTHENTICATION = "/api/v1/authentication"
 
     def __str__(self):
