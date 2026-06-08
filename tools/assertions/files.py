@@ -7,7 +7,9 @@ from clients.files.files_schema import CreateFileRequestSchema, CreateFileRespon
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 from config import settings
+from tools.logger import get_logger
 
+logger = get_logger("FILES_ASSERTIONS")
 
 @allure.step("Check create file response")
 def assert_create_file_response(response: CreateFileResponseSchema, request: CreateFileRequestSchema):
@@ -17,6 +19,8 @@ def assert_create_file_response(response: CreateFileResponseSchema, request: Cre
     :param response: ответ с данными файла
     :return: AssertionError, если хотя бы одно поле не совпадает
     """
+    logger.info("Check create file response")
+
     expected_url = f"{settings.http_client.client_url}static/{request.directory}/{request.filename}"
     assert_equal(str(response.file.url), expected_url, name="url")
     assert_equal(response.file.filename, request.filename, name="filename")
@@ -31,6 +35,8 @@ def assert_file_is_accessible(url: str, ):
     :param url: ссылка на файл
     :return: AssertionError, если файл недоступен
     """
+    logger.info("Check file is accessible")
+
     response = httpx.get(url)
     assert response.status_code == 200, f"Файл по ссылке {url} недоступен"
 
@@ -43,6 +49,8 @@ def assert_file(actual: FileSchema, expected: FileSchema):
     :param expected: ожидаемые данные файл
     :return: AssertionError, если хотя бы одно поле не совпадает
     """
+    logger.info("Check file")
+
     assert_equal(actual.id, expected.id, name="id")
     assert_equal(actual.filename, expected.filename, name="filename")
     assert_equal(actual.directory, expected.directory, name="directory")
@@ -60,6 +68,8 @@ def assert_get_file_response(
     :param create_file_response: ответ на запрос создания файла
     :return: AssertionError, если ответы не совпадает
     """
+    logger.info("Check get file response")
+
     assert_file(get_file_response.file, create_file_response.file)
 
 
@@ -70,6 +80,8 @@ def assert_create_file_with_empty_filename_response(actual: ValidationErrorRespo
     :param actual: ответ от API с ошибкой валидации, которую необходимо проверить
     :return: AssertionError, если фактический ответ не совпадает с ожидаемым
     """
+    logger.info("Check create file with empty filename response")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
@@ -92,6 +104,8 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
     :param actual: ответ от API с ошибкой валидации, которую необходимо проверить
     :return: AssertionError, если фактический ответ не совпадает с ожидаемым
     """
+    logger.info("Check create file with empty directory response")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
@@ -114,6 +128,8 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     :param actual: фактический ответ API
     :return: AssertionError если фактический ответ не совпадает ошибке "File not found"
     """
+    logger.info("Check file not found response")
+
     expected = InternalErrorResponseSchema(details="File not found")
     assert_internal_error_response(actual, expected)
 
@@ -121,10 +137,12 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
 @allure.step("Check get file with incorrect file id response")
 def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorResponseSchema):
     """
-
+    Функция для проверки ошибки при создании файла, если некорректный id файла
     :param actual:
     :return:
     """
+    logger.info("Check get file with incorrect file id response")
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
