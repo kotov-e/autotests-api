@@ -1,10 +1,12 @@
+import allure
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, CourseSchema, \
     GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
-import allure
+from tools.logger import get_logger
 
+logger = get_logger("COURSES_ASSERTIONS")
 
 @allure.step("Check updated course response")
 def assert_updated_courses_response(response: UpdateCourseResponseSchema, request: UpdateCourseRequestSchema):
@@ -14,6 +16,8 @@ def assert_updated_courses_response(response: UpdateCourseResponseSchema, reques
     :param request: данные запроса
     :return: AssertionError, если хотя бы одно из полей ответа не совпадают
     """
+    logger.info("Check updated course response")
+
     assert_equal(actual=response.course.title, expected=request.title, name="title")
     assert_equal(actual=response.course.max_score, expected=request.max_score, name="max_score")
     assert_equal(actual=response.course.min_score, expected=request.min_score, name="min_score")
@@ -29,6 +33,8 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     :param expected: ожидаемые данные курса
     :return: AssertionError, если хотя бы одно из полей не совпадают
     """
+    logger.info("Check course")
+
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.max_score, expected.max_score, "max_score")
@@ -51,6 +57,8 @@ def assert_get_courses_response(
     :param create_course_responses: данные запроса
     :return: AssertionError, если хотя бы один курс не совпадает
     """
+    logger.info("Check get courses response")
+
     assert_length(get_courses_response.courses, create_course_responses, "courses")
 
     for index, create_course_responses in enumerate(create_course_responses):
@@ -64,6 +72,8 @@ def assert_created_course_response(response: CreateCourseResponseSchema, request
     :param request: данные запроса
     :return: AssertionError, если хотя бы одно из полей не совпадает
     """
+    logger.info("Check created course response")
+
     assert_equal(actual=response.course.title, expected=request.title, name="title")
     assert_equal(actual=response.course.max_score, expected=request.max_score, name="max_score")
     assert_equal(actual=response.course.min_score, expected=request.min_score, name="min_score")
