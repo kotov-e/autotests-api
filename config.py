@@ -20,6 +20,7 @@ class TestDataConfig(BaseModel):
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
+        extra='allow', # разрешить доп переменные в окружении
         env_file=".env",  # .env.dev .enev.stable .env.prod ...
         env_file_encoding="utf-8",
         env_nested_delimiter="."
