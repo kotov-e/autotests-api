@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI3LjQ1MjY1OCIsInVzZXJfaWQiOiI5MGNhNjJlZS1hMTI4LTQxMGUtYTk3MC1jZTcwYTMyMDRkODUifQ.-r6PyyEEI0NLOyEQRXiti0x951iCBKv-Grq7gTpxIw4' \
+  -H 'content-length: 356' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Modern ok toward.","maxScore":77,"minScore":2,"description":"Close wonder off record culture. Between suddenly would television might. Sport fast theory station force.\nWide important it piece summer staff.","estimatedTime":"7 weeks","previewFileId":"d40f4ad6-e361-4a46-8bfc-f97513033816","createdByUserId":"90ca62ee-a128-410e-a970-ce70a3204d85"}'

@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:75 Check created course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to asd
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 59
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 29
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Stand form others cover.
+South pass share performance rich without. Mind recently foot whom. New record involve. Same once part throughout religious hospital explain sit.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 6 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that preview_file_id equals to c33aa389-db5b-4d55-a691-55ca45a2163a
+INFO     BASE_ASSERTIONS:base.py:35 Check that created_by_user_id equals to e43b831e-06c7-4263-979f-9ec80bd70cd3
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

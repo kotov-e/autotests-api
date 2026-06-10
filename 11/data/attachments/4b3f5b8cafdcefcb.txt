@@ -1,0 +1,16 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/files/86195505-996f-484f-9502-e9aecae477dd
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files/86195505-996f-484f-9502-e9aecae477dd
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     FILES_ASSERTIONS:files.py:71 Check get file response
+INFO     FILES_ASSERTIONS:files.py:52 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to 86195505-996f-484f-9502-e9aecae477dd
+INFO     BASE_ASSERTIONS:base.py:35 Check that filename equals to trade
+INFO     BASE_ASSERTIONS:base.py:35 Check that directory equals to story
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to http://localhost:8000/static/story/trade
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

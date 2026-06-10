@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI3LjcyNjgyMyIsInVzZXJfaWQiOiI4NzQ5NTFkMC0yZGIzLTQyNjctYmU5Ni00NmFlNzliNTkzZjYifQ.OGGTyldyTwzZmc_yV0GAkt4Cp3NQkFvWDoOSVodPHqQ' \
+  -H 'content-length: 389' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Raise radio study.","maxScore":61,"minScore":10,"description":"Tonight so event area. Catch tree modern support. Collection dinner senior catch number foreign.\nSeries physical nearly couple large bed. Nation require value compare project.","estimatedTime":"1 weeks","previewFileId":"f7940b20-399c-4b03-99d0-74af20f6e966","createdByUserId":"874951d0-2db3-4267-be96-46ae79b593f6"}'

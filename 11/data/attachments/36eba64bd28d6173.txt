@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI4LjY4MTc4MyIsInVzZXJfaWQiOiI0OWU5OTQzZC04NjM3LTQyZDgtODJkMC01NTRiOTU4ZDNkNDgifQ.anjKov-AUbBZC-5mf7qTYYvL1edyCRJONtM4cS2fcDY' \
+  -H 'content-length: 324' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Or future majority business already.","maxScore":75,"minScore":4,"description":"New change available guess probably contain. Why food spring himself across policy include of.","estimatedTime":"5 weeks","previewFileId":"e3d47fbc-b8fe-4e01-8790-de8550b5a11e","createdByUserId":"49e9943d-8637-42d8-82d0-554b958d3d48"}'

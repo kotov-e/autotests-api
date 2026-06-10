@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI2LjU1MDkwOCIsInVzZXJfaWQiOiI4ZTMyYzIzNy00ZDkzLTQ2MTItYjExMi04ODI3ZmM5ZDcwOTgifQ.XIvJPulPYajuuaJWInNbceT93--CZMVNBy4pW9sNDyM' \
+  -H 'content-length: 328' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Represent if style health call.","courseId":"613fc89e-d4c7-48e0-838f-9c8fb6190cad","maxScore":79,"minScore":2,"orderIndex":1,"description":"Under city big institution. Seven water network economic difference camera. Bit society another future two marriage. Goal heart miss town data letter.","estimatedTime":"3 weeks"}'

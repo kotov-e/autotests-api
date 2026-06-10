@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI2LjI3NTkwMCIsInVzZXJfaWQiOiJkN2E3NDRmNy0wNTA0LTQyZmItOGEyYS1hMGYwNDQ4ZTc3NGEifQ.xBvYyEs-ZOtWcBz9bNfxNIQDklL2PcKmWEPJaTZZkXI' \
+  -H 'content-length: 397' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mission character street house outside my true factor.","courseId":"cfab4d64-2651-47e0-9db5-0819a2d6bab1","maxScore":51,"minScore":24,"orderIndex":31,"description":"Candidate job writer just.\nDetermine health they region left already. Ability member wear break true. Wait crime sit.\nInto on name officer anyone. Add sea cut including support run production.","estimatedTime":"2 weeks"}'

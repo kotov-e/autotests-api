@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjIzLjkyMzU4MiIsInVzZXJfaWQiOiJlNDNiODMxZS0wNmM3LTQyNjMtOTc5Zi05ZWM4MGJkNzBjZDMifQ.wa1VB1JalWMpzy_el2sipGPS3Eqx_y0tH5R2MnUTkPM' \
+  -H 'content-length: 369' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":59,"minScore":29,"description":"Stand form others cover.\nSouth pass share performance rich without. Mind recently foot whom. New record involve. Same once part throughout religious hospital explain sit.","estimatedTime":"6 weeks","previewFileId":"c33aa389-db5b-4d55-a691-55ca45a2163a","createdByUserId":"e43b831e-06c7-4263-979f-9ec80bd70cd3"}'

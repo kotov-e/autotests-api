@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI1LjMzODAyOSIsInVzZXJfaWQiOiI1YWI0ODM2OC0yMzM1LTQ3MjItOTVkNi1jZGYyZDRmM2E0N2UifQ.zR8tJZ6QhsCPb2M2Ox2IiJ4OFxWa6QHZGuSmLszKj1w' \
+  -H 'content-length: 377' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Order all available cause.","maxScore":67,"minScore":27,"description":"Position accept eat night provide two. Relationship population ball finally. Seek argue seek yeah six affect travel senior. Suffer skin apply factor issue.","estimatedTime":"10 weeks","previewFileId":"75fe204e-69f1-40f7-be55-1f8e5939469b","createdByUserId":"5ab48368-2335-4722-95d6-cdf2d4f3a47e"}'

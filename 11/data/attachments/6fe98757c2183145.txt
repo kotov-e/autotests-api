@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjM4OjI2LjU1MDkwOCIsInVzZXJfaWQiOiI4ZTMyYzIzNy00ZDkzLTQ2MTItYjExMi04ODI3ZmM5ZDcwOTgifQ.XIvJPulPYajuuaJWInNbceT93--CZMVNBy4pW9sNDyM' \
+  -H 'content-length: 340' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Available room sit radio look various.","maxScore":79,"minScore":27,"description":"Room decision great president little I question structure. Military matter nothing control me worry course.","estimatedTime":"5 weeks","previewFileId":"6efc26fe-20f6-4e08-a5bd-b1600a992da3","createdByUserId":"8e32c237-4d93-4612-b112-8827fc9d7098"}'

@@ -1,0 +1,23 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/b3a25464-fe1a-466b-b6b3-4563a4a2d611
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/b3a25464-fe1a-466b-b6b3-4563a4a2d611
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:80 Check get exercise id response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Represent if style health call.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 613fc89e-d4c7-48e0-838f-9c8fb6190cad
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 79
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 2
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Under city big institution. Seven water network economic difference camera. Bit society another future two marriage. Goal heart miss town data letter.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 3 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to b3a25464-fe1a-466b-b6b3-4563a4a2d611
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema
