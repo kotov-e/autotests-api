@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:75 Check created course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to asd
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 25
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Still because management sure a. Stay finally physical field process beautiful. Notice entire both tough product television prevent. Administration imagine until think television.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that preview_file_id equals to 0ded6a61-7b6a-49c1-99b7-9b3a7bcbb403
+INFO     BASE_ASSERTIONS:base.py:35 Check that created_by_user_id equals to e381e3db-2cf8-4e3d-a8fa-b300277560c2
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

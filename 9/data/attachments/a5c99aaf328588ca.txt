@@ -1,0 +1,22 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/exercises/484265ee-cd7a-4439-97b2-a0705ba58a4b
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/484265ee-cd7a-4439-97b2-a0705ba58a4b
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:100 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Camera then during already test remember.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 88
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 8
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 72
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Others country seek just few. Congress must skin option five most officer ever.
+Price character run military someone beyond. Value five know front.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

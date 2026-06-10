@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM0LjY2NTQyOSIsInVzZXJfaWQiOiJlMzgxZTNkYi0yY2Y4LTRlM2QtYThmYS1iMzAwMjc3NTYwYzIifQ.Kpf9eCP_uDcZJ4UNLURL5gm7vWgUk4n5dwjLrG5Jq5s' \
+  -H 'content-length: 377' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":50,"minScore":25,"description":"Still because management sure a. Stay finally physical field process beautiful. Notice entire both tough product television prevent. Administration imagine until think television.","estimatedTime":"2 weeks","previewFileId":"0ded6a61-7b6a-49c1-99b7-9b3a7bcbb403","createdByUserId":"e381e3db-2cf8-4e3d-a8fa-b300277560c2"}'

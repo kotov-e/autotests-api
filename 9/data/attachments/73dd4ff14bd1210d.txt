@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM4LjQyNzQyOCIsInVzZXJfaWQiOiI4YTE1NjQyNy1iYzgwLTRlYjQtYTczYy01MzU5OGI4ZjAwMmUifQ.iMAQEpqDgOEksoLOOf0gdNbxbbTus4RjciAiW_1ddbg' \
+  -H 'content-length: 362' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Can section prepare lose machine involve piece.","maxScore":88,"minScore":17,"description":"Choose behind discover include person run. Theory media why information indeed full staff.\nOnly court area spend least.","estimatedTime":"9 weeks","previewFileId":"5ff8d86e-c11e-4de1-955c-a8ce636552f3","createdByUserId":"8a156427-bc80-4eb4-a73c-53598b8f002e"}'

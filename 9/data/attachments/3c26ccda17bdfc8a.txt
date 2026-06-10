@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/c66933e2-7085-4a27-af51-994e1a4abcbb' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM2LjA3MDk0OSIsInVzZXJfaWQiOiI4YjA5MmY2Ny1kYWEyLTQ5NzgtOTBmYi0xODE2MjRmZDhjZjUifQ.KCi_BuaA8UU1eYra9kbKjXMMpjIcNHtsNKIrHys7Jpo' \
+  -H 'content-length: 303' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Entire fight rest center.","maxScore":61,"minScore":9,"description":"Ask move property those. Window development summer thank tonight in. Radio prove challenge audience own catch international.\nBig away system able garden hard small ok. Sister suggest offer there.","estimatedTime":"8 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM5LjM2OTQyMiIsInVzZXJfaWQiOiIzOGEzOGJiZC1jN2I4LTQ2MDktOWM3ZC03MDc5N2MyNWQxY2YifQ.4brvB0xqc0lEcDYWqHt42bhkO4cufUvm8AdgP5wh3O4' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"There line enough.","maxScore":74,"minScore":15,"description":"Choose far sit because dog. Value goal use music every game behind. Occur per take exactly. Each way Congress decade.","estimatedTime":"6 weeks","previewFileId":"78818241-b016-4876-aa2c-410d8338cba1","createdByUserId":"38a38bbd-c7b8-4609-9c7d-70797c25d1cf"}'

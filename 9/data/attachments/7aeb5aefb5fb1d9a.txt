@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/courses/c66933e2-7085-4a27-af51-994e1a4abcbb
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses/c66933e2-7085-4a27-af51-994e1a4abcbb
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:19 Check updated course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Entire fight rest center.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 61
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 9
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Ask move property those. Window development summer thank tonight in. Radio prove challenge audience own catch international.
+Big away system able garden hard small ok. Sister suggest offer there.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 8 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

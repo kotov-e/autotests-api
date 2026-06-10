@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM4LjE1MzYyNyIsInVzZXJfaWQiOiI2NTY4ODgxYy0yYjAzLTQwMDgtYWM4MS04N2IwMWY1MGY5ZWUifQ.lXilY7uqsaInwyVlEx-bn7LPWx6Lt-_wyu44tShgUfQ' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"West build technology father woman ask fill.","maxScore":98,"minScore":30,"description":"Create wide information without than. Past money official for develop eat international process. Nothing house across TV conference some fire.","estimatedTime":"5 weeks","previewFileId":"26cc0e8f-3f55-44cc-9386-f4d4e00bfc52","createdByUserId":"6568881c-2b03-4008-ac81-87b01f50f9ee"}'

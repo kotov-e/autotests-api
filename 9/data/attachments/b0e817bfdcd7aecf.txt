@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM2LjA3MDk0OSIsInVzZXJfaWQiOiI4YjA5MmY2Ny1kYWEyLTQ5NzgtOTBmYi0xODE2MjRmZDhjZjUifQ.KCi_BuaA8UU1eYra9kbKjXMMpjIcNHtsNKIrHys7Jpo' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bank also pass body piece.","maxScore":88,"minScore":9,"description":"Product board not watch. Along decision air indeed lay.","estimatedTime":"5 weeks","previewFileId":"bb6c32c1-10a6-426c-8f3b-636616112d21","createdByUserId":"8b092f67-daa2-4978-90fb-181624fd8cf5"}'

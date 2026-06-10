@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA4OjUwOjM3LjI1MzMxOCIsInVzZXJfaWQiOiIxYzgzZDNlYS05MzhjLTQ1NjUtOGRjOS1iMWJjOGZhNzdiMDIifQ.eaei9PNI8qFQBXB-q_whUzKny7Nso0ESONtQK3m_DNo' \
+  -H 'content-length: 362' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Voice quickly or go couple artist mean.","courseId":"075a69ea-08d1-4b38-848f-e13d85e589fa","maxScore":99,"minScore":22,"orderIndex":1,"description":"Financial director expect bring oil history city. Agree recognize fire red enter.\nAgo dark adult necessary alone foreign. Mr study news wish yet. Set plant purpose necessary.","estimatedTime":"3 weeks"}'
