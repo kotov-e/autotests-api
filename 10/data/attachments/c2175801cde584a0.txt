@@ -1,0 +1,16 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/files/81dbdae6-4e3a-4879-bc40-3d5350383ddd
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files/81dbdae6-4e3a-4879-bc40-3d5350383ddd
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     FILES_ASSERTIONS:files.py:71 Check get file response
+INFO     FILES_ASSERTIONS:files.py:52 Check file
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to 81dbdae6-4e3a-4879-bc40-3d5350383ddd
+INFO     BASE_ASSERTIONS:base.py:35 Check that filename equals to talk
+INFO     BASE_ASSERTIONS:base.py:35 Check that directory equals to degree
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to http://localhost:8000/static/degree/talk
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

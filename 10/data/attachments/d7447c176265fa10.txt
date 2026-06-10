@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjI5LjY1MzU5MyIsInVzZXJfaWQiOiI3MmNiNjdhNi05ZjMyLTQxNTgtYjUzZi1hYTUyZmY0ZDMyZjkifQ.ZFsz0UwCmmBbukdvFfAIu5mljdNIADo8DkcwN9w2nik' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":56,"minScore":18,"description":"Cut draw in attention. Always close beat wife boy bag.\nOccur address item water. Boy network growth because value threat page.","estimatedTime":"7 weeks","previewFileId":"f5ccee1b-d573-4f0d-a45e-a2d540f1a82f","createdByUserId":"72cb67a6-9f32-4158-b53f-aa52ff4d32f9"}'

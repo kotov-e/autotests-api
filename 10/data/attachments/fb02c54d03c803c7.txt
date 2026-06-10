@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjMxLjk5MDIzMCIsInVzZXJfaWQiOiJhY2EyMDhmZi1jNTgwLTQwMmMtYmIxMy0zOWRmN2VkMDliNWIifQ.rC4RGDQt2kERkfyJ-RCUrns0iN2g4x1baM9HpZGIsl0' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Well enter share lot season.","maxScore":64,"minScore":17,"description":"Claim whatever add lot stand. Determine society itself then yes sport receive.\nDifference force guess however want someone. Thank behavior history artist.","estimatedTime":"8 weeks","previewFileId":"fd4e36e5-257b-4002-ae59-7885ca86650d","createdByUserId":"aca208ff-c580-402c-bb13-39df7ed09b5b"}'

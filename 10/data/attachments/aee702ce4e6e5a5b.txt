@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjMxLjA2Njc2MiIsInVzZXJfaWQiOiJmZjg3OWVmOS1mYjdhLTQ1ZWYtODBmNy02NmFhOGY2NWEyZjMifQ.x6l0xARg2amObUaCofIXo6pJCWAFB9pIk2jcxxu7BHs' \
+  -H 'content-length: 315' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Give key Mrs moment tonight trip structure.","maxScore":84,"minScore":5,"description":"Partner society possible guess. Clearly of reason kid civil onto evidence way.","estimatedTime":"3 weeks","previewFileId":"b096621c-0d72-484e-bc12-f2c3911b539c","createdByUserId":"ff879ef9-fb7a-45ef-80f7-66aa8f65a2f3"}'

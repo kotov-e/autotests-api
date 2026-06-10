@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjMzLjQ1NTUyNSIsInVzZXJfaWQiOiI5ODdlMTQyMC00YmFiLTQxOWQtYTBkNy1iODIyZGRjNDBhMTkifQ.VYqzieJ6UlVCOi-DQuXm5U-gt-_VGpbp27_VWKgMwgY' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Character country the light actually.","maxScore":87,"minScore":13,"description":"Learn our agreement time represent. Condition doctor phone perhaps I. Such about something rise fact protect would.","estimatedTime":"7 weeks","previewFileId":"23b197c6-4def-4e19-a7ea-3f370baf16fc","createdByUserId":"987e1420-4bab-419d-a0d7-b822ddc40a19"}'

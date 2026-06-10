@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/courses/3d149c5d-1cad-4e91-a960-716cff89c2d0
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses/3d149c5d-1cad-4e91-a960-716cff89c2d0
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:19 Check updated course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to They continue natural director deep baby country.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 53
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 7
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Marriage with when land decision choose bar. Wind deal finally music happen worry include. Easy special bring local. Choice place available war.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

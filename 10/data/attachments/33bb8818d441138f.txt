@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjMwLjc5MTMxOSIsInVzZXJfaWQiOiI2OTk1Mjg0MS1mNmRkLTRhYmQtYWZiMi0wNWJiMWYyZWE3MjAifQ.U9Wg6Hq_9DzgSgrY23IRRd2YeKp257_cPLWgcj_ftYU' \
+  -H 'content-length: 311' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Article view arm realize.","maxScore":57,"minScore":6,"description":"Scene affect difference language forward guy might. Town next actually ago many crime trial.","estimatedTime":"4 weeks","previewFileId":"d9f5c304-0914-4e01-b004-662b62f971a4","createdByUserId":"69952841-f6dd-4abd-afb2-05bb1f2ea720"}'

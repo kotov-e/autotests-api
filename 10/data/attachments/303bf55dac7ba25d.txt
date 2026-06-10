@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjMyLjI2NDg2MiIsInVzZXJfaWQiOiIyODAwNzFjOS05OWFmLTQzNjMtYTY4YS0zNGMyOTgzZTA1YTYifQ.drqU0vwrWIN_AzD9_LZSz8anCjnmgilFeRE6x35YjmQ' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cup car speech cold experience woman.","maxScore":60,"minScore":14,"description":"Discover still people every economic personal notice. Authority consumer know a.\nTeam add key century. Start while special smile beyond ever. Learn top suggest situation win letter daughter.","estimatedTime":"7 weeks","previewFileId":"f676ddb0-fa74-4f86-a5bf-882dfad51b82","createdByUserId":"280071c9-99af-4363-a68a-34c2983e05a6"}'

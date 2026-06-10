@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Almost your street road whom bag.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to f9b4951c-d763-4309-8e87-d0cb6051086a
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 50
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 24
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 45
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Agreement firm read man. Black himself sort.
+Federal read hit face late as. Former method property personal. Else democratic improve to.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

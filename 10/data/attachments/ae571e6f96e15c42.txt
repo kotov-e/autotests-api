@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjE2OjM0LjQwMzIwMyIsInVzZXJfaWQiOiJkYWNhNTBmZC01Yzk2LTRmNGEtODcwMC01NjNjYjU3ODM3NjEifQ.ezgHhppBSwsRi-aE9YhpeITKgRc0HlGtG-KEMijb9N8' \
+  -H 'content-length: 300' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Weight key nor and step.","maxScore":92,"minScore":16,"description":"Fly they after open decision sport. Rise candidate grow recognize against member.","estimatedTime":"1 weeks","previewFileId":"59a71c53-6ab5-48d2-b08e-24d1cd1e63a9","createdByUserId":"daca50fd-5c96-4f4a-8700-563cb5783761"}'
