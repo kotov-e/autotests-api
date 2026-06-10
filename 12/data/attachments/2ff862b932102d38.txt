@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Mean doctor recently rock them.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 9a93ba34-5c5f-4f6e-87fc-f81a4eaa51a9
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 60
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 27
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 21
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Hold degree than week wear society let final. Draw should live my heart kind way.
+Strategy occur Democrat wrong collection. Thank easy follow go beautiful enter.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

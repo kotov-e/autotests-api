@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAyLjUxOTgyNCIsInVzZXJfaWQiOiIyZTE3OGRjYS05ZjcyLTRhOWUtOTUzNi1mZTI1NTQ1MTI1ZmEifQ.Qou81m9EofDnNNdLoiNyQH1xTfEHRMQO81tgcNyolH4' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Anyone say reveal road.","maxScore":62,"minScore":19,"description":"Clearly open small practice play similar. Establish exist color next option finally body. Including around pick forward certain discover. Still head tell newspaper ground shake.","estimatedTime":"3 weeks","previewFileId":"e4c33c9c-818e-4ab2-934b-df3217c80d39","createdByUserId":"2e178dca-9f72-4a9e-9536-fe25545125fa"}'

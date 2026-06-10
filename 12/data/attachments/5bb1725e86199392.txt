@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAxLjI5OTEyMiIsInVzZXJfaWQiOiJiYjc2OWIwZC04OWEzLTQzNzgtYTY2Yi1jNGZlMGEwZGI5MDkifQ.ErGjn2xhhH-MUFjKRWXLroRynRUF5K0Y-7C7li8EXA0' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Usually age whole professor fight age.","maxScore":98,"minScore":2,"description":"Over able particular still. Also return create husband. Ability parent school age.\nBecause recently read shake customer guess need. Yeah bill little region always recently.","estimatedTime":"9 weeks","previewFileId":"dc715279-c9fe-4960-be83-77f32009d41b","createdByUserId":"bb769b0d-89a3-4378-a66b-c4fe0a0db909"}'

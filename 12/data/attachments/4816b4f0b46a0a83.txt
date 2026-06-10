@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAzLjQ2ODgwMyIsInVzZXJfaWQiOiJjY2ZjNDJkOC0yMTliLTQ2ZTMtODJlZC0xN2ZhYjAzYTNlY2EifQ.95l70OgBg7bn4WJWg386MOKH1-s-WtTuYp0pcoe_7oM' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Any wide hard decide structure memory much girl.","maxScore":76,"minScore":27,"description":"Out we east paper why some. Difference decide whether another staff wall.\nDetermine light white spring.","estimatedTime":"8 weeks","previewFileId":"ecd0c29e-0d02-45cd-ae66-0ccf71a81449","createdByUserId":"ccfc42d8-219b-46e3-82ed-17fab03a3eca"}'

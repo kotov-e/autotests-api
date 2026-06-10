@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAwLjcxMjE1OCIsInVzZXJfaWQiOiI2ODA2NDBhMy03MTIyLTQ3MDYtODBiYy04YmQyNDk1MjAyODYifQ.U1mM_Rd86ubIoe4PHW5iXfdhrgCkfxI6KxvjsNAbCjk' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Talk eye stand remain.","maxScore":80,"minScore":3,"description":"Range group we note. Whole Mr recognize late prove open. Seem turn thousand guy this.","estimatedTime":"10 weeks","previewFileId":"5df9e323-849c-4b7c-adaa-251b53d11b84","createdByUserId":"680640a3-7122-4706-80bc-8bd249520286"}'

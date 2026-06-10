@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAxLjkzMDAzOCIsInVzZXJfaWQiOiIzOGFiNWZhNS0wNDZhLTQwMDItYTVjYy00NzcxOTcyMDhiOGUifQ.bVx4dE1RY71JDlzu8St1G7KTv9IZhFRD_PegGuezMgI' \
+  -H 'content-length: 428' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Without discuss make friend reflect long pull politics.","maxScore":91,"minScore":14,"description":"Feeling make give. Ahead traditional mind then task sense difficult. Science water just for question back let. When address fund lawyer above candidate truth.\nTo company sport.","estimatedTime":"10 weeks","previewFileId":"f99a2a47-a2d2-42d7-997a-50a6643bf44b","createdByUserId":"38ab5fa5-046a-4002-a5cc-477197208b8e"}'

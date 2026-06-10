@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/6901d553-9193-44b6-8de4-9fa534fbb4ba
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/6901d553-9193-44b6-8de4-9fa534fbb4ba
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:80 Check get exercise id response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Cut shoulder read share toward purpose.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 4e893fb9-3165-4567-8603-f9e847186f9e
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 54
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Improve guy space weight read middle. Indeed dark official sport draw certainly attack.
+Meet fire issue once actually success.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to 6901d553-9193-44b6-8de4-9fa534fbb4ba
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ2OjU4Ljg5NjQ0MyIsInVzZXJfaWQiOiJhZjg2YmE1My1mMmI2LTRiNGQtOTJkZC1iODE0NzI5MjQ0ZjUifQ.EQSPdiyYyXIa2Ac2lhsWzDv3NhSHPsg5YCCVYrkNrN4' \
+  -H 'content-length: 358' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":59,"minScore":23,"description":"Pass apply bank past animal public. Employee far over step last next like.\nWant phone save under usually past. Pattern cup wind agreement necessary individual.","estimatedTime":"5 weeks","previewFileId":"96f16ef8-2401-4dd1-a7df-474dddeb6c7d","createdByUserId":"af86ba53-f2b6-4b4d-92dd-b814729244f5"}'

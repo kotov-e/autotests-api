@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b265b83c-258d-4568-b369-a60c208daf46' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTEwVDA5OjQ3OjAwLjA2NTc0MSIsInVzZXJfaWQiOiJlNjAyOTQ2OC1kYjQxLTQzNDUtYmVhZi0yNGNmNzMyMjE5NzMifQ.feSGH3-MSW3Ni-02Ge9fzah-gWPULr7HGMRE92kftw0' \
+  -H 'content-length: 313' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Surface north stay democratic.","maxScore":67,"minScore":2,"description":"Pm pay who reduce. Line scientist world capital world need.\nRule significant painting own until focus company. College serve media design civil.\nFly edge guy PM. Plan how small support suggest laugh.","estimatedTime":"1 weeks"}'
