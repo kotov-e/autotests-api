@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI3LjY2MTA1MCIsInVzZXJfaWQiOiIzZGQ1OGU1Ni02ZjZmLTRiMWQtYTk2Yy01ODZjMDAyMzQwZDIifQ.234LZz8NxtMxZRYHjlbkf50Zdwz9YUXX03fSNbNrJFI' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Allow care present suffer surface.","courseId":"0bf2ca29-cd17-404c-a193-faa90dca552d","maxScore":60,"minScore":15,"orderIndex":1,"description":"Study wish he employee. Story with ready heart language simply American.\nRecognize employee alone significant movie reveal look. Visit positive movement federal. Loss join fund short next kid skill.","estimatedTime":"5 weeks"}'

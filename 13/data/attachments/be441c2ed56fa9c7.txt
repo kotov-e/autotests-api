@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI3LjY2MTA1MCIsInVzZXJfaWQiOiIzZGQ1OGU1Ni02ZjZmLTRiMWQtYTk2Yy01ODZjMDAyMzQwZDIifQ.234LZz8NxtMxZRYHjlbkf50Zdwz9YUXX03fSNbNrJFI' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Make turn bag rate.","maxScore":57,"minScore":6,"description":"Trade new understand main least. Administration billion in provide quickly worry this.\nVarious physical blood letter.","estimatedTime":"10 weeks","previewFileId":"16e73ce3-5f29-40d9-b4b9-2cd743206c57","createdByUserId":"3dd58e56-6f6f-4b1d-a96c-586c002340d2"}'

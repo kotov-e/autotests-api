@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/6ddcc6fd-2f6f-4d37-9980-a4e5e890a22e
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/6ddcc6fd-2f6f-4d37-9980-a4e5e890a22e
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:80 Check get exercise id response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Allow care present suffer surface.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 0bf2ca29-cd17-404c-a193-faa90dca552d
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 60
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 15
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Study wish he employee. Story with ready heart language simply American.
+Recognize employee alone significant movie reveal look. Visit positive movement federal. Loss join fund short next kid skill.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 5 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to 6ddcc6fd-2f6f-4d37-9980-a4e5e890a22e
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

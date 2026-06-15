@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI2LjQ0MTY0MyIsInVzZXJfaWQiOiJmMWE2NWVjNy05MDA3LTRkYzMtOTQxNC02NmRlZWQ4NTUxZDYifQ.2OyCAA8nv4wzEsVowKS3hoQ3l-ihWrNKVQcHifcfBy4' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Difference others beyond cell nearly.","maxScore":92,"minScore":3,"description":"Own movement local cost imagine improve since. Until speak behind participant message seat him.\nPicture any century. Audience arrive help commercial especially full because.","estimatedTime":"9 weeks","previewFileId":"47c80322-4fca-4277-a378-fdddeb6570f9","createdByUserId":"f1a65ec7-9007-4dc3-9414-66deed8551d6"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI5LjUwODI3OSIsInVzZXJfaWQiOiJlN2ZmOTMzNC0yMTczLTQ1NDgtYjhjOC1hMjkxM2UxNDVhNTMifQ.J4PEkm-btFCZNG1IcXgHI4puflut5PbjizIbidGp8qI' \
+  -H 'content-length: 393' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Meeting other need.","maxScore":73,"minScore":17,"description":"Board accept bad former stay wife. Thus probably ever little single medical.\nAlthough finally common action. Public identify wall quite. Out five experience until body run team.","estimatedTime":"10 weeks","previewFileId":"23f0ebf3-8136-4ed6-a610-fa907cbfe783","createdByUserId":"e7ff9334-2173-4548-b8c8-a2913e145a53"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI4LjIzODA3MSIsInVzZXJfaWQiOiIzZWMzZGQ0MC0yMDdiLTQ5YjUtOGI2Ny1jNTJlNjVkYTU5NDYifQ.7GJedUww7NpTu79ycv0mXdLH5MHDVdEe4UP9BUksK7w' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Message blood common cause age scene.","maxScore":75,"minScore":16,"description":"Particular huge fill do great. General bill my article.\nHuge new seek figure without. Ready half change draw understand water study.","estimatedTime":"7 weeks","previewFileId":"233a059f-3840-48a3-94dc-59f9bcad70aa","createdByUserId":"3ec3dd40-207b-49b5-8b67-c52e65da5946"}'

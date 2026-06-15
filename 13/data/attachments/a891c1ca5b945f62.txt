@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI4LjkyNTcxNiIsInVzZXJfaWQiOiIxN2JjMzRhNy03M2I0LTQ2ZjktOTUyNC05NmFkNTAzMDExOTIifQ.mbFFCS96E0XVpSZSft6tzfxHQufFfNhKbJUL05nNvgg' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Likely task head position choice yeah.","courseId":"671d202f-cf0e-4688-af15-418c63f489f3","maxScore":66,"minScore":25,"orderIndex":1,"description":"Red produce hotel such bring. Bill physical oil beyond major.\nRelationship gun yourself somebody week center. Simple always sort reduce watch.","estimatedTime":"10 weeks"}'

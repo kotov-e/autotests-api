@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE1VDEyOjEwOjI3LjAyNzkwNSIsInVzZXJfaWQiOiIyMjY2OGI1OS05OTBlLTRhODItOWM1MS03NGVmOGVjMzU3MjgifQ.HaDBMGBg0XqxlJZIlWcFXCVWxAQAcv7-Rv99L_3YlD0' \
+  -H 'content-length: 311' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Issue old huge.","maxScore":73,"minScore":6,"description":"Set fast people her four how. Evidence country evidence beyond. Could strong bill season even general.","estimatedTime":"3 weeks","previewFileId":"84be45be-718a-4f8d-8dc7-d0b899ccf1bd","createdByUserId":"22668b59-990e-4a82-9c51-74ef8ec35728"}'
