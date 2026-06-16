@@ -65,7 +65,7 @@ jobs:
           path: coverage-history.json
           key: coverage-history-${{ github.run_id }}
 
-      - name: Upload Coverage results
+      - name: Upload  Coverage results
         if: always()
         uses: actions/upload-artifact@v7
         with:
