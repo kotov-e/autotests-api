@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ4Ljg5MDIyMSIsInVzZXJfaWQiOiJiNTI3N2M2My0zNzM5LTRlNzEtOGJiNy1mMzJhZmEwYTc1MWUifQ.bU0eAlB6hCl4JG36NeRzutUUfaaylaOAyC5_y2QIuLw' \
+  -H 'content-length: 436' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Grow account study daughter onto little after.","maxScore":85,"minScore":2,"description":"Industry more why space address.\nCollection prevent wall thousand beautiful his. Some couple thousand bring. Forget she person son service protect all. Game campaign development we explain bring.","estimatedTime":"5 weeks","previewFileId":"64ca85cc-91bb-4915-b94e-3d8cfcefc140","createdByUserId":"b5277c63-3739-4e71-8bb7-f32afa0a751e"}'

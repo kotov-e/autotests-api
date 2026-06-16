@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ2Ljg2NDMzNyIsInVzZXJfaWQiOiIyYmYyYWFlMS04NWQ3LTQ3MzUtYjQ4Ny04M2I5MTA3ODQ2MzIifQ.74gLaSOL913d8N0SEC77ohk_c8TxhsqyXgkh-dcQDKU' \
+  -H 'content-length: 352' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Form imagine event office pick.","maxScore":70,"minScore":22,"description":"Her glass government never. Live later ready less despite town.\nWithout protect entire decide.\nCase instead still fund soon.","estimatedTime":"6 weeks","previewFileId":"bce71b19-3bca-4b88-a876-5cd3b5447b3f","createdByUserId":"2bf2aae1-85d7-4735-b487-83b910784632"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ5LjEyOTkxMiIsInVzZXJfaWQiOiJjNTk1YzkxNi1iNzU1LTQ5OWItODVjYS01YzgwOTdhNzA3ZjQifQ.Bh-f_mm-dMP868tOmW68z5uY3HzgSGfid2ysObv0isY' \
+  -H 'content-length: 355' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Again herself director the attorney house approach wait.","maxScore":95,"minScore":8,"description":"One effect success notice seek card must. Authority music current administration. Pay nice author health.","estimatedTime":"8 weeks","previewFileId":"fe34a89f-0e12-47d2-8aa5-58fc3fde4bef","createdByUserId":"c595c916-b755-499b-85ca-5c8097a707f4"}'

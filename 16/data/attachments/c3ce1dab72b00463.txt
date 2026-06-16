@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3d81578d-dec2-45e7-a5a5-a88cc458fa10' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ2LjYyNTcyOSIsInVzZXJfaWQiOiI0M2M5NDExOC05ZDYxLTRmYTItODFlNC04ZTUzZDRhZDE5NWYifQ.uTlbSXLesNqMWLvSLxxAlUrJbZ6MQzqopIrmwBUkLtM' \
+  -H 'content-length: 244' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Imagine final stock especially visit power employee.","maxScore":71,"minScore":18,"description":"Economic play organization rich somebody dinner.\nCountry sell effort. Whatever quite dinner here base space.","estimatedTime":"7 weeks"}'

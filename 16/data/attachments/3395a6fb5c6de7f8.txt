@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ2LjYyNTcyOSIsInVzZXJfaWQiOiI0M2M5NDExOC05ZDYxLTRmYTItODFlNC04ZTUzZDRhZDE5NWYifQ.uTlbSXLesNqMWLvSLxxAlUrJbZ6MQzqopIrmwBUkLtM' \
+  -H 'content-length: 426' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Watch baby son left near enough.","maxScore":78,"minScore":19,"description":"Save ten attack knowledge of company teacher. Stand again decide likely Mr. Tree long shoulder entire age.\nWar east experience forward. Your play end nothing skin. Own company us dream relationship.","estimatedTime":"6 weeks","previewFileId":"872570f4-f387-491a-8d27-e9b473527430","createdByUserId":"43c94118-9d61-4fa2-81e4-8e53d4ad195f"}'

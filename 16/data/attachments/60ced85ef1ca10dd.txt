@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjM3OjQ4Ljg5MDIyMSIsInVzZXJfaWQiOiJiNTI3N2M2My0zNzM5LTRlNzEtOGJiNy1mMzJhZmEwYTc1MWUifQ.bU0eAlB6hCl4JG36NeRzutUUfaaylaOAyC5_y2QIuLw' \
+  -H 'content-length: 360' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Significant magazine scientist realize occur child against.","courseId":"42bfd4d0-de8d-4e16-bc7c-8c192c513023","maxScore":61,"minScore":13,"orderIndex":1,"description":"Though their avoid thousand commercial maintain. Daughter play prepare Mrs few control.\nSocial respond information receive. The smile cultural anything.","estimatedTime":"8 weeks"}'

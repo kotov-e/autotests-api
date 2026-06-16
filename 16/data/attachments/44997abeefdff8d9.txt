@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/bfd1d5f1-7807-4e84-91f8-25b1520a9bc0
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/bfd1d5f1-7807-4e84-91f8-25b1520a9bc0
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:80 Check get exercise id response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Final sort red western thank.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 36067d79-2423-417b-8828-d51d7cf3657f
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 85
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 25
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Ready personal policy. Choose actually determine society success theory.
+Compare reality should challenge hard. Down experience ago glass arm head. Behind expert where. Recent better politics.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 10 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to bfd1d5f1-7807-4e84-91f8-25b1520a9bc0
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema
