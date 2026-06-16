@@ -6,9 +6,8 @@ from clients.exercises.exercises_schema import CreateExerciseRequestSchema, Crea
     GetExerciseResponseSchema, GetExerciseQuerySchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema, \
     GetCourseQuerySchema
 import allure
-
 from tools.routes import APIRoutes
-
+from clients.api_coverage import tracker
 
 class ExercisesClient(APIClient):
     """
@@ -16,6 +15,7 @@ class ExercisesClient(APIClient):
     """
 
     @allure.step("Get exercises")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def get_exercise_api(self, query: GetCourseQuerySchema) -> Response:
         """
         Метод получения занятия по id
@@ -24,6 +24,7 @@ class ExercisesClient(APIClient):
         return self.get(f"{APIRoutes.EXERCISES}", params=query.model_dump(by_alias=True))
 
     @allure.step("Get exercises by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_id_api(self, exercise_id: str) -> Response:
         """
         Метод получения занятия по id
@@ -32,6 +33,7 @@ class ExercisesClient(APIClient):
         return self.get(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
     @allure.step("Create exercise")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создания занятия
@@ -51,6 +53,7 @@ class ExercisesClient(APIClient):
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Update exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
         Метод обновления занятия
@@ -61,6 +64,7 @@ class ExercisesClient(APIClient):
         return self.patch(f"{APIRoutes.EXERCISES}/{exercise_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления занятия
