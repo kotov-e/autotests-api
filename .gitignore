@@ -10,3 +10,9 @@ allure-results
 allure-report
 
 # env .env
+
+# coverage
+coverage.html
+coverage-history.json
+coverage-report.json
+coverage-results

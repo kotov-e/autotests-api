@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Clone test server respository
+      - name: Clone test server repository
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
 
       - name: Install test server dependencies
@@ -35,7 +35,7 @@ jobs:
           JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key"
           JWT_ACCESS_TOKEN_EXPIRE: 1800
           JWT_REFRESH_TOKEN_EXPIRE: 5184000
-        run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course & # &  запуск в фоновом режиме
+        run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course & # & запуск в фоновом режиме
 
       - name: Install dependencies
         run: |
@@ -46,7 +46,34 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses=2
 
+      - name: Restore Coverage history
+        uses: actions/cache/restore@v5
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+          restore-keys: |
+            coverage-history-
+
+      - name: Generate Coverage report
+        run: |
+          swagger-coverage-tool save-report
+
+      - name: Cache Coverage history
+        if: always()
+        uses: actions/cache/save@5
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+
+      - name: Upload Coverage results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage-report
+          path: coverage.html
+
       - name: Upload Allure results as artifacts
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: allure-results
