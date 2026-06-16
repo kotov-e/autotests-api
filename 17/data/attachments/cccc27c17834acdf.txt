@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/c68b0a6b-2c6b-4ad9-99ba-984f4ab6ddd2' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU5LjY1MTY4MyIsInVzZXJfaWQiOiI3ZWY2MDdhMi1lMmVkLTQ0NmItYTY5MS1mNDg4ZTUxYjliMmEifQ.LAopVa9pD09hpoRfhbT0J411z2gI8P56yc99UjJU70A' \
+  -H 'content-length: 287' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Money wear truth town maintain factor.","maxScore":92,"minScore":30,"orderIndex":13,"description":"Policy choose yourself mention history alone your. Shake leave crime method four eat. Its spring subject bed international. Help ago name TV marriage.","estimatedTime":"4 weeks"}'

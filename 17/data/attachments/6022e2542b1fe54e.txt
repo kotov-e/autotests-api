@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU2LjkzNDI3MiIsInVzZXJfaWQiOiI2N2VkY2I0Ni0xODYwLTQ0NjItOTIzOS05ODgzZWRmNTM3YTAifQ.a6gyofJUV_BavRf1WV7qGHW0psr4gVF4OAUJHVy-fH8' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Medical bar movie.","maxScore":62,"minScore":16,"description":"Key shake lawyer next buy current community professional. Watch note until officer nor thus. Quite business career central image military these.","estimatedTime":"3 weeks","previewFileId":"16c07092-cc4a-46f3-beef-51cf0fb52ec1","createdByUserId":"67edcb46-1860-4462-9239-9883edf537a0"}'

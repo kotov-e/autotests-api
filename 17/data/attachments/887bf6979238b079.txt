@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises?courseId=c62dd4f2-1400-4fc5-a7f5-3be4d0418731
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=c62dd4f2-1400-4fc5-a7f5-3be4d0418731
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:62 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:71 Check that length of exercises equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:21 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to About control he some direction.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to c62dd4f2-1400-4fc5-a7f5-3be4d0418731
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 78
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 11
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Ten environment suffer spend. Ball former cultural right.
+Continue focus hour face drive east. Language others drop between good use.
+Step ten half staff.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/courses/084c0d01-8852-4436-8878-d2e817d6c767
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses/084c0d01-8852-4436-8878-d2e817d6c767
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:19 Check updated course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Build voice you responsibility talk present employee.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Glass woman not act as character international bad. Want important good million reason. Perform test suggest tell.
+Risk deal social student. Tell spend stage ten police. Avoid idea politics drug.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

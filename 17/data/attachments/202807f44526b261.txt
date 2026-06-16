@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/084c0d01-8852-4436-8878-d2e817d6c767' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU2LjkzNDI3MiIsInVzZXJfaWQiOiI2N2VkY2I0Ni0xODYwLTQ0NjItOTIzOS05ODgzZWRmNTM3YTAifQ.a6gyofJUV_BavRf1WV7qGHW0psr4gVF4OAUJHVy-fH8' \
+  -H 'content-length: 331' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Build voice you responsibility talk present employee.","maxScore":67,"minScore":1,"description":"Glass woman not act as character international bad. Want important good million reason. Perform test suggest tell.\nRisk deal social student. Tell spend stage ten police. Avoid idea politics drug.","estimatedTime":"1 weeks"}'

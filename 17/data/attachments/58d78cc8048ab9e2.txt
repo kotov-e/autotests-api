@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU1LjQ3NTM1OSIsInVzZXJfaWQiOiJlMzI5NjQyNi1jZGMxLTQzYzMtOTBlMy0xNzFmNDExNzAzMmYifQ.aQfCTu5yHXbfSwwr3TVHzRrpfFaq9vnlGWz_4b5TpoI' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":50,"minScore":25,"description":"Discussion act agree worry purpose medical issue.\nPm baby about ask natural. Leave with personal good town man fish. Right less culture player have.","estimatedTime":"8 weeks","previewFileId":"3d30d94d-b726-4089-af43-870acbf47776","createdByUserId":"e3296426-cdc1-43c3-90e3-171f4117032f"}'

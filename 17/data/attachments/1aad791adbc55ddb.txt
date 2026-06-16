@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU5Ljk2MTg2NyIsInVzZXJfaWQiOiI4MDk0MmY1OS1iY2Y2LTRiYjUtYjRmMy0yZDdjYzI3MWFhNGUifQ.UMuATl8y_cPF4kaO1iIaeiVzBoEMiJIxNZJg5H7eyQ8' \
+  -H 'content-length: 419' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Manager million current big into.","maxScore":86,"minScore":30,"description":"Fall enter sort possible. Them sense answer. Join whom summer.\nFund doctor sell environmental more democratic return. Seven statement by turn look. Despite way street write officer pay take.","estimatedTime":"1 weeks","previewFileId":"07b99bc1-6aab-4889-82a1-b0218f25fe20","createdByUserId":"80942f59-bcf6-4bb5-b4f3-2d7cc271aa4e"}'

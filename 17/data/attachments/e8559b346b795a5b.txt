@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU4LjE0NTk1NSIsInVzZXJfaWQiOiI5MGVjOTg5OC1jYmNmLTQ1NGMtYWQzMS0wMTNjM2EzY2EzMTMifQ.WaD9nmcWOnZS85AL4Js4Q35Fx9Voqy7wAhTljMH3PTc' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Body piece fish entire pretty education measure.","maxScore":85,"minScore":5,"description":"Recently fire computer particularly operation. Job according agree cell safe against benefit.\nBreak nice participant source here building. Anything use describe difficult with water.","estimatedTime":"3 weeks","previewFileId":"2a84fd08-db9b-480b-86b1-5b41780a6d29","createdByUserId":"90ec9898-cbcf-454c-ad31-013c3a3ca313"}'

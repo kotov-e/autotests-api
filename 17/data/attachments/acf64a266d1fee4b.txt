@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU4LjcyMzg3MyIsInVzZXJfaWQiOiIwMmQwNWZiMi1mM2YyLTRiY2ItOGY1My02ZTQyYjczNzM0YWEifQ.pV3DyVLXIfZqVKzu6qA2LCNkGgh7nY2L4kfZovGRr-U' \
+  -H 'content-length: 382' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fire away rise want first forward.","maxScore":95,"minScore":16,"description":"Include happy say imagine.\nView field market reason tree however true record.\nLike image stuff past green watch. Foreign feel form entire peace person.","estimatedTime":"6 weeks","previewFileId":"27d1d218-81b0-431b-baf5-e3da55f68e9f","createdByUserId":"02d05fb2-f3f2-4bcb-8f53-6e42b73734aa"}'

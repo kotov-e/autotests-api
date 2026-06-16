@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU5LjY1MTY4MyIsInVzZXJfaWQiOiI3ZWY2MDdhMi1lMmVkLTQ0NmItYTY5MS1mNDg4ZTUxYjliMmEifQ.LAopVa9pD09hpoRfhbT0J411z2gI8P56yc99UjJU70A' \
+  -H 'content-length: 427' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Personal society likely relationship discussion wind scene.","maxScore":91,"minScore":9,"description":"Test return debate husband explain. Although interview of bag scene. Defense country spend over after.\nDebate mean son growth various nor allow. Hot would character current.","estimatedTime":"6 weeks","previewFileId":"6bc5de1f-7ce7-4a74-8abb-7417928497cd","createdByUserId":"7ef607a2-e2ed-446b-a691-f488e51b9b2a"}'

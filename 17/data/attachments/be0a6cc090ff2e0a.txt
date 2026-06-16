@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU5Ljk2MTg2NyIsInVzZXJfaWQiOiI4MDk0MmY1OS1iY2Y2LTRiYjUtYjRmMy0yZDdjYzI3MWFhNGUifQ.UMuATl8y_cPF4kaO1iIaeiVzBoEMiJIxNZJg5H7eyQ8' \
+  -H 'content-length: 281' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bill modern middle.","courseId":"674706d7-1bc2-4a27-a921-1e0b33478821","maxScore":57,"minScore":16,"orderIndex":1,"description":"Perhaps painting agency unit together begin save. Indeed off my beyond. Establish health me provide various story.","estimatedTime":"5 weeks"}'

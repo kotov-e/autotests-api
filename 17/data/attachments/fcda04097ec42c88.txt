@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDEwOjE2OjU3LjUxNDIwMiIsInVzZXJfaWQiOiI3NjQ1NTNmMy1iNTI0LTQ5ODItODczNS02N2RmNWIyNGYzN2EifQ.hsvZkkv0D54Ok5u5FMW87Ce0SVGssbXVFzgXfY_OUYM' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Student drug north long blood.","maxScore":92,"minScore":19,"description":"Someone because issue step. Then where again some technology pressure. Set stay who marriage blue save education standard.","estimatedTime":"1 weeks","previewFileId":"af0cf2aa-78ff-4db9-ae1f-f99c3640f128","createdByUserId":"764553f3-b524-4982-8735-67df5b24f37a"}'
