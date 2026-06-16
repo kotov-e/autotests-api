@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/courses/58d75666-7492-4035-b13b-78723d506f96
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses/58d75666-7492-4035-b13b-78723d506f96
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     COURSES_ASSERTIONS:courses.py:19 Check updated course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Red main direction quite author whatever.
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 64
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 18
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Read wear possible letter herself base culture. Respond son ground manager democratic travel growth. At although choose position much yet.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

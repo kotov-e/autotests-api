@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjEzLjEzMTY3MCIsInVzZXJfaWQiOiJjOWVlMDM4Ny01NzQ4LTRkZjctOTllNy03YjIzZWQyZTFhMGQifQ.U_HRXz-rpupJ2GyHCUbRey6KO5P3OfE-NKfveJPxu0I' \
+  -H 'content-length: 360' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Center each laugh.","maxScore":70,"minScore":9,"description":"West seven agency meeting sea. Pattern interview able less bar early.\nParticular staff amount think draw tonight. Yes sell church generation study.","estimatedTime":"9 weeks","previewFileId":"d7f99f21-7743-4111-a1ec-f7c916b87aef","createdByUserId":"c9ee0387-5748-4df7-99e7-7b23ed2e1a0d"}'

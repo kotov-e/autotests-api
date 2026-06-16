@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/7321a60a-d69f-4ef0-a6ef-e82db90a7f30' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjE0LjMyMTQ4MSIsInVzZXJfaWQiOiI2ZmIwN2RlMC1lMzk0LTQwMmMtOWNiMS0yMjZlZjdkMTc0OGYifQ.mGh-Yp3z64FCFiWKlWl_9aGJhDpC_QgeYVPkN-C3uLw' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Difference difficult service enjoy.","maxScore":74,"minScore":26,"orderIndex":63,"description":"Husband history understand set hear. Stuff allow may. Old plant can east her.\nSenior move prevent as. Blue teacher evidence build occur decide but.\nPrice exist data white around campaign may film.","estimatedTime":"2 weeks"}'

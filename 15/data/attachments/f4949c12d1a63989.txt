@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjE0LjMyMTQ4MSIsInVzZXJfaWQiOiI2ZmIwN2RlMC1lMzk0LTQwMmMtOWNiMS0yMjZlZjdkMTc0OGYifQ.mGh-Yp3z64FCFiWKlWl_9aGJhDpC_QgeYVPkN-C3uLw' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Then mouth follow ahead tend give stage young.","maxScore":57,"minScore":6,"description":"Audience from second commercial American statement. Person send six technology force draw apply.\nWriter seven benefit father computer. Position human federal all task.","estimatedTime":"4 weeks","previewFileId":"b65b3b80-fc1d-4436-8b8a-a46dd3e78913","createdByUserId":"6fb07de0-e394-402c-9cb1-226ef7d1748f"}'

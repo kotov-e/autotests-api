@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjE1LjI5Mzk0NSIsInVzZXJfaWQiOiI0OWRlN2VhNi0zMmNjLTQyNjctODJhZS1iNDk4MDk4YTVlZGYifQ.baxtMGGSjbKlo6mkTq9vnElXGIutYKaTLAagPK3F_4I' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Partner simply all month fill agency.","maxScore":56,"minScore":1,"description":"Ago reflect event task same then into.\nRich state society. Affect official third fish. Fish feeling respond wear step visit.","estimatedTime":"10 weeks","previewFileId":"55feb3c0-3a5d-4b09-aa91-c66dc5ac1dcf","createdByUserId":"49de7ea6-32cc-4267-82ae-b498098a5edf"}'

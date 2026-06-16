@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjEwLjUwNDQ4OCIsInVzZXJfaWQiOiJmMWUyOTA1OC0wMTBmLTRkN2MtYTEwMi0yM2UxZTRhODZmOWUifQ.Cixwd3T_2eBU1tLj42Jt0w0UDbGiuOnIiCTfbgbw7gw' \
+  -H 'content-length: 269' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":60,"minScore":23,"description":"Head measure list black light might save. Computer key single language.","estimatedTime":"2 weeks","previewFileId":"e6c6cc9e-8911-4111-af53-ce9470dd2d63","createdByUserId":"f1e29058-010f-4d7c-a102-23e1e4a86f9e"}'

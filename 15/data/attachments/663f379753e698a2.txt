@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjEyLjg1NzYzMSIsInVzZXJfaWQiOiI4NzBlOGM2Ni03MDIzLTQ3NTEtOGVkZC00MWI0ZGY2YWY4NzQifQ.KhNgs2ONzXeQY9-f9KiFae2NN_QINlWgL0omLmCwwoI' \
+  -H 'content-length: 437' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind certainly table heavy education focus cold course.","maxScore":62,"minScore":2,"description":"Live arm impact keep. Blood enter management class receive executive. Suddenly behind huge couple.\nWind goal choice contain.\nProduce key day agency song light seven. Effort allow PM but.","estimatedTime":"2 weeks","previewFileId":"d88a7d3f-1dac-465c-8ab6-4c923a0f75f9","createdByUserId":"870e8c66-7023-4751-8edd-41b4df6af874"}'

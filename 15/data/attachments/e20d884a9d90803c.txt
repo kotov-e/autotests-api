@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjExLjkyNTYwMSIsInVzZXJfaWQiOiI5NWYwNDIyZS1hNjY0LTQwZTItYTQ5Mi0xODdmN2FmZTdkMWYifQ.ES_KAqSenmtg7r72fE-8YnCsrdJB9hT7xDpIgQ-0rsg' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Difference deal number develop event success.","maxScore":84,"minScore":2,"description":"Music central any name old door. Decision wish figure without.\nEither good under join rather energy. Establish or establish hot some.\nMarriage today service. Have street both policy.","estimatedTime":"3 weeks","previewFileId":"be016b88-4d2e-4321-a452-41e348a3dc65","createdByUserId":"95f0422e-a664-40e2-a492-187f7afe7d1f"}'

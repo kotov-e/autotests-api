@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to Democratic look method determine word stand response.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 927349bc-ac74-4ddf-92b9-73564c8f22f1
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 96
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 23
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 26
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Either common sound change. Fish he student response. Article campaign get whom class. System long manager.
+Off class commercial final. Push yes impact clear.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

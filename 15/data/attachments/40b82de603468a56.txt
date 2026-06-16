@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjE0LjMyMTQ4MSIsInVzZXJfaWQiOiI2ZmIwN2RlMC1lMzk0LTQwMmMtOWNiMS0yMjZlZjdkMTc0OGYifQ.mGh-Yp3z64FCFiWKlWl_9aGJhDpC_QgeYVPkN-C3uLw' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Along our street budget main accept.","courseId":"c87f852e-d7a9-4c51-ba2f-5bbbe7ae8573","maxScore":63,"minScore":13,"orderIndex":1,"description":"Remember radio someone talk base factor. Relationship wide piece reality chair develop follow.","estimatedTime":"4 weeks"}'

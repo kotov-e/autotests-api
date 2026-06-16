@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjE0LjA0NjI2NiIsInVzZXJfaWQiOiJmZDMxODkxNC0wNGY0LTQ5YzYtYTVkOC1kMTZlOTEyOWVlMTMifQ.kC7UMivoKNtuM7TiTi5ZQM0q_GJ7E687ExTGhRtb5CE' \
+  -H 'content-length: 389' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Far else court bar parent grow give.","maxScore":50,"minScore":17,"description":"Manage citizen reflect. Store reach behavior clear focus student own picture.\nBut member energy suffer. Summer opportunity trouble score relate take culture.","estimatedTime":"9 weeks","previewFileId":"bcb0724e-08e8-4174-9180-c410a4b12745","createdByUserId":"fd318914-04f4-49c6-a5d8-d16e9129ee13"}'

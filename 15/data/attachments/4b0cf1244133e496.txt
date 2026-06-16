@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjEyLjg1NzYzMSIsInVzZXJfaWQiOiI4NzBlOGM2Ni03MDIzLTQ3NTEtOGVkZC00MWI0ZGY2YWY4NzQifQ.KhNgs2ONzXeQY9-f9KiFae2NN_QINlWgL0omLmCwwoI' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Democratic look method determine word stand response.","courseId":"927349bc-ac74-4ddf-92b9-73564c8f22f1","maxScore":96,"minScore":23,"orderIndex":26,"description":"Either common sound change. Fish he student response. Article campaign get whom class. System long manager.\nOff class commercial final. Push yes impact clear.","estimatedTime":"5 weeks"}'

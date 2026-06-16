@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/58d75666-7492-4035-b13b-78723d506f96' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDA5OjMzOjExLjkyNTYwMSIsInVzZXJfaWQiOiI5NWYwNDIyZS1hNjY0LTQwZTItYTQ5Mi0xODdmN2FmZTdkMWYifQ.ES_KAqSenmtg7r72fE-8YnCsrdJB9hT7xDpIgQ-0rsg' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Red main direction quite author whatever.","maxScore":64,"minScore":18,"description":"Read wear possible letter herself base culture. Respond son ground manager democratic travel growth. At although choose position much yet.","estimatedTime":"3 weeks"}'
