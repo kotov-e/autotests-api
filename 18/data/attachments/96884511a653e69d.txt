@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjIzLjY5NzExNSIsInVzZXJfaWQiOiJjZWFmZjBmNy0zN2Y1LTQ2NTUtODJiOC1jN2U5MGRhMWQ2NzUifQ.pgtAKGiO8CrIFHPKFviGtEqyDZSiLKaZoKbzQdRzif8' \
+  -H 'content-length: 321' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Medical every spring little win figure performance.","maxScore":92,"minScore":10,"description":"Themselves them threat man structure. Teacher page stock policy east final.","estimatedTime":"7 weeks","previewFileId":"fa88b660-3cba-432e-8b08-99be2919db6b","createdByUserId":"ceaff0f7-37f5-4655-82b8-c7e90da1d675"}'

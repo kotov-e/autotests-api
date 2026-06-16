@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjIzLjQyNDAwNyIsInVzZXJfaWQiOiI3OTRjNzZjMi1hOTk3LTQ3ZGItYTU3OS04OTUyNzc4NDE1YzAifQ.pjYj7DXMGtyAiRC1HFjURZH5Vo4atpi5SFHaMHVxWhE' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Adult order executive Mr indicate example.","maxScore":72,"minScore":3,"description":"Major friend attention wind. Field score produce suffer sing share information even. Town democratic sense serious.","estimatedTime":"3 weeks","previewFileId":"82a31ede-d4e8-406d-807d-dd0c0bd0ae7f","createdByUserId":"794c76c2-a997-47db-a579-8952778415c0"}'

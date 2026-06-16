@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjI1LjgzMDY2NyIsInVzZXJfaWQiOiI3ZWFhNjI5ZC05ZWM5LTQwNWItOGE3YS05NjRiOGMwY2QwZmEifQ.-HwwD2TkyWPETD4AAVuSrn1bL3YsmaCu_cFMekgiW48' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Actually provide tell risk prepare seat sister.","maxScore":89,"minScore":8,"description":"Plan kid sit phone treat. High himself social official tonight four.\nMust stand skin feeling.\nCurrent hear serious ago method. How me staff laugh maintain name.","estimatedTime":"9 weeks","previewFileId":"0f7c0ec7-7456-4c34-bbd0-cdd9158ed5f8","createdByUserId":"7eaa629d-9ec9-405b-8a7a-964b8c0cd0fa"}'

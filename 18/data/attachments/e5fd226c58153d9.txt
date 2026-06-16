@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjIyLjUxNDgxOCIsInVzZXJfaWQiOiJmZjZmZTFkYS0xNmU1LTRhOWYtOGU1Yi02ZmE0MzBmZGYwNWQifQ.m57PhjPa8BqdifG7hdxLqvZf0zjDLK05DzktqWBbHhI' \
+  -H 'content-length: 400' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Hold finish car detail.","maxScore":100,"minScore":7,"description":"Moment sea teacher than leg six look must. Tell head bed. Relationship across product party behavior education.\nUpon energy miss go paper realize best. Arrive laugh especially them.","estimatedTime":"8 weeks","previewFileId":"b98640bf-cae6-427b-9acd-0cf8b73733ed","createdByUserId":"ff6fe1da-16e5-4a9f-8e5b-6fa430fdf05d"}'

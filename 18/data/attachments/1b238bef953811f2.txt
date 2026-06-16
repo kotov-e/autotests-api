@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjIxLjEwNTYyMiIsInVzZXJfaWQiOiJhMjhiMmZkMC01YWJiLTQwMmItYmZmOS01NmZlNWNmMzBhYWMifQ.epISugH8iv15GRbwT7M4j46caBKkvBThCqEhiG-c220' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":56,"minScore":27,"description":"Fall might can rich information. Check relationship training my discuss.\nFriend find production first likely reality him. I positive break performance believe share.","estimatedTime":"7 weeks","previewFileId":"b3814780-d3d0-4c24-b3b9-489521d06328","createdByUserId":"a28b2fd0-5abb-402b-bff9-56fe5cf30aac"}'

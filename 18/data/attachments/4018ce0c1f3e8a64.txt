@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/feed08fb-b53c-4c42-ab91-da7a72c7ed0b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE2VDExOjIwOjIyLjUxNDgxOCIsInVzZXJfaWQiOiJmZjZmZTFkYS0xNmU1LTRhOWYtOGU1Yi02ZmE0MzBmZGYwNWQifQ.m57PhjPa8BqdifG7hdxLqvZf0zjDLK05DzktqWBbHhI' \
+  -H 'content-length: 312' \
+  -H 'content-type: application/json' \
+  -d '{"title":"I drug sister article those education seek.","maxScore":98,"minScore":14,"description":"Single job cost budget suffer start improve. End late able. Only rock yeah wait tree television.\nUnder consider risk trade. Also food fine choice. Newspaper car yard yard allow at term.","estimatedTime":"9 weeks"}'
