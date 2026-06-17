@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjEzLjMzOTU2MSIsInVzZXJfaWQiOiIyZmNjYzAyZC02MzQ2LTRkY2ItYmI1OC0yY2M5ODZhMjliMzUifQ.KkA-lW2BmTk9tqhR_dCDROLYbb_iF5B30L0LAdk8zLk' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Model husband race.","maxScore":71,"minScore":29,"description":"Knowledge firm study third able very president. Meeting scene film information concern.\nDecision style new race way PM. Financial day everybody gun strategy by. Act recently next event.","estimatedTime":"10 weeks","previewFileId":"c6f54f34-90ae-4864-af7e-64f7963225e7","createdByUserId":"2fccc02d-6346-4dcb-bb58-2cc986a29b35"}'

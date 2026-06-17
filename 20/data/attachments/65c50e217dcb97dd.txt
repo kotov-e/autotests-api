@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/83aac5d2-e182-4cf1-9683-a9fc1cc71417' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjEyLjUwMzkyMSIsInVzZXJfaWQiOiJhZjkxOTBiMS04ZTZmLTRjMjMtOWUxZi1lMDQzM2U3YWRiMjgifQ.JXpp8r_EYNF_gLbV_CuY6jO6lGO0855B9P35cCJUElM' \
+  -H 'content-length: 227' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Safe human hit sort far direction be.","maxScore":88,"minScore":26,"description":"Perhaps finish region.\nIdea record describe. Method agree cut fall network. News role ago order certainly.","estimatedTime":"9 weeks"}'

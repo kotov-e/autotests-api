@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjEyLjA3ODE3OCIsInVzZXJfaWQiOiIyZmE3YWFjYS1kMWYyLTRjZGMtODk0OC1jZjg3OGQwMjZlYWYifQ.94-cfM_X0GD9WERdk_sn4dbrIJAEUIX3zp4f4aUfTJs' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wait affect bill job fire.","maxScore":68,"minScore":5,"description":"Discussion write see its. Nearly apply western build serve new station. Lose cell ten investment actually bit fine.\nAccept hair gun whole test right cut. Whom visit strategy fear popular might.","estimatedTime":"10 weeks","previewFileId":"3e914965-aef7-4aa0-8ed7-bdb16b8fce1a","createdByUserId":"2fa7aaca-d1f2-4cdc-8948-cf878d026eaf"}'

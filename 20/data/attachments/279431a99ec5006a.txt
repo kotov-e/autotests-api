@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjEyLjUwMzkyMSIsInVzZXJfaWQiOiJhZjkxOTBiMS04ZTZmLTRjMjMtOWUxZi1lMDQzM2U3YWRiMjgifQ.JXpp8r_EYNF_gLbV_CuY6jO6lGO0855B9P35cCJUElM' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prevent machine turn laugh yeah talk fish.","maxScore":93,"minScore":1,"description":"Drop painting fast. Name receive staff just talk stage. Hope ago whom could step best.\nCost know style great. Discover bill attorney room good share staff.","estimatedTime":"1 weeks","previewFileId":"a3d1900c-7ad8-4347-b22d-103e4c541546","createdByUserId":"af9190b1-8e6f-4c23-9e1f-e0433e7adb28"}'

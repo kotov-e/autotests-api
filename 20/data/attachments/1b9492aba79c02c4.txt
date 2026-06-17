@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjExLjMwNjAwMSIsInVzZXJfaWQiOiI4MjRiZjE5Zi00OGU0LTRlNjQtOWRhYS01OGY4NDJjOTViZWUifQ.fsqxyGU4FjQtzGfCQLwyefA3FMoxHbUiiPz0qoj9sOw' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":79,"minScore":12,"description":"Suffer car leader stop role pattern. News modern member gun art impact allow. Film share watch.\nBoard above heart new. Establish friend region magazine.","estimatedTime":"4 weeks","previewFileId":"4b3bc41b-44e6-4bd8-956e-e7167fe64dad","createdByUserId":"824bf19f-48e4-4e64-9daa-58f842c95bee"}'

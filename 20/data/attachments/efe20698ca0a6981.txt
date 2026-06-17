@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjE0LjAyMDg0MSIsInVzZXJfaWQiOiJmMTI2Mzk2Yi01YzJkLTRlNjYtODQxNC0yMmNiMTcxNWNlYWEifQ.vH46chttY57hWNhiq1bUN65kEy2_lZ-yAUWvkp1Izp8' \
+  -H 'content-length: 342' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Health speech majority professor base.","maxScore":68,"minScore":17,"description":"Sort any local story series. Must father body minute project find. Rock rate church let follow street teach.","estimatedTime":"10 weeks","previewFileId":"e3acc479-c3e6-4566-a3b0-88f5b075d5e9","createdByUserId":"f126396b-5c2d-4e66-8414-22cb1715ceaa"}'

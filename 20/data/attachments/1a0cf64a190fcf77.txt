@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEwOjEyOjE0LjIxMjg5OCIsInVzZXJfaWQiOiJmMmZjNzVlNi1iYWJhLTRhN2EtOTM4Ni04N2MyN2YxNmZkYjYifQ.GoUP_hUjmm81ItX1C9J8AEkIAFL-75AgpNHa4RHs304' \
+  -H 'content-length: 308' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Her week various both ball call cold.","maxScore":76,"minScore":13,"description":"Issue pass opportunity board economy bad or box. Base once relationship Mrs.","estimatedTime":"3 weeks","previewFileId":"d7ef0a06-0e01-4a05-abeb-dfbb8a8946ef","createdByUserId":"f2fc75e6-baba-4a7a-9386-87c27f16fdb6"}'
