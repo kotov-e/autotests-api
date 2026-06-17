@@ -1,8 +1,6 @@
-from http import HTTPStatus
-
 import pytest
 import allure
-
+from http import HTTPStatus
 from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_client import ExercisesClient
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
@@ -14,7 +12,8 @@ from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from tools.assertions.base import assert_status_code
-from tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_id_response, assert_exercise, \
+from tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_id_response, \
+    assert_exercise, \
     assert_update_exercise_response, assert_exercise_not_found_response, assert_get_exercises_response
 from tools.assertions.schema import validate_json_schema
 from tools.allure.tags import AllureTag
@@ -47,16 +46,15 @@ class TestExercises:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
     @allure.tag(AllureTag.GET_ENTITIES)
     @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Get exercises")
     @allure.severity(Severity.BLOCKER)
     def test_get_exercises(self,
-                          exercises_client: ExercisesClient,
-                          function_course: CourseFixture,
-                          function_exercise: ExerciseFixture
-                          ):
+                           exercises_client: ExercisesClient,
+                           function_course: CourseFixture,
+                           function_exercise: ExerciseFixture
+                           ):
         query = GetCourseQuerySchema(courseId=function_course.response.course.id)
         response = exercises_client.get_exercise_api(query)
         response_data = GetExerciseResponseSchema.model_validate_json(response.text)
@@ -71,9 +69,9 @@ class TestExercises:
     @allure.title("Get exercise by id")
     @allure.severity(Severity.BLOCKER)
     def test_get_exercise_id(self,
-                          exercises_client: ExercisesClient,
-                          function_exercise: ExerciseFixture
-                          ):
+                             exercises_client: ExercisesClient,
+                             function_exercise: ExerciseFixture
+                             ):
         exercise_id = function_exercise.response.exercise.id
         response = exercises_client.get_exercise_id_api(exercise_id=exercise_id)
         response_data = GetExerciseIdResponseSchema.model_validate_json(response.text)
@@ -82,7 +80,6 @@ class TestExercises:
         assert_get_exercise_id_response(response_data, function_exercise.request, exercise_id)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-
 
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.story(AllureStory.UPDATE_ENTITY)

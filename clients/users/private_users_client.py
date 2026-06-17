@@ -23,7 +23,7 @@ class PrivateUsersClient(APIClient):
         return self.get(f"{APIRoutes.USERS}/me")
 
     @allure.step("Get user by id {user_id}")
-    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}") # экранируем скобки, api/v1/users/{user_id}
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         """
         Метод получения пользователя по идентификатору.

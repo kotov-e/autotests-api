@@ -7,15 +7,14 @@ from clients.event_hooks import curl_event_hook, log_request_event_hook, log_res
 from config import settings
 
 
-
-
-class AuthenticationUsersSchema(BaseModel, frozen=True): # теперь это неизменяемый объект
+class AuthenticationUsersSchema(BaseModel, frozen=True):  # теперь это неизменяемый объект
     model_config = ConfigDict(populate_by_name=True)
 
     email: str = Field(alias="email")
     password: str = Field(alias="password")
 
-@lru_cache(maxsize=None) # кеширует возвращаемое значение функции
+
+@lru_cache(maxsize=None)  # кеширует возвращаемое значение функции
 def get_private_http_client(user: AuthenticationUsersSchema) -> Client:
     """
     Функция создает экземпляр httpx Client с аутентификацией пользователя
@@ -34,5 +33,6 @@ def get_private_http_client(user: AuthenticationUsersSchema) -> Client:
         event_hooks={
             "request": [curl_event_hook, log_request_event_hook],
             "response": [log_response_event_hook]
-        } # event_hooks - словарь, в котором ключ - это событие, а значение - это список функций, которые будут вызваны при этом событии
+        }
+        # event_hooks - словарь, в котором ключ - это событие, а значение - это список функций, которые будут вызваны при этом событии
     )

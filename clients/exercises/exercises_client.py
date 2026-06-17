@@ -2,9 +2,8 @@ from httpx import Response
 
 from clients.api_client import APIClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUsersSchema
-from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
-    GetExerciseResponseSchema, GetExerciseQuerySchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema, \
-    GetCourseQuerySchema
+from clients.exercises.exercises_schema import (CreateExerciseRequestSchema, CreateExerciseResponseSchema,
+                                                GetExerciseQuerySchema, UpdateExerciseRequestSchema)
 import allure
 from tools.routes import APIRoutes
 from clients.api_coverage import tracker
@@ -16,7 +15,7 @@ class ExercisesClient(APIClient):
 
     @allure.step("Get exercises")
     @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
-    def get_exercise_api(self, query: GetCourseQuerySchema) -> Response:
+    def get_exercise_api(self, query: GetExerciseQuerySchema) -> Response:
         """
         Метод получения занятия по id
         :return: Ответ от сервера в виде объекта httpx Response

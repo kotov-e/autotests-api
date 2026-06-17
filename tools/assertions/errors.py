@@ -37,7 +37,6 @@ def assert_validation_error_response(
     logger.info("Check validation error response")
 
     assert_length(actual.details, expected.details, "details")
-
     # assert_equal(actual.details, expected.details, "details") если ошибка, то в логах будет очень много информации
 
     for index, detail in enumerate(expected.details):  # enumerate - возвращает индекс и значение

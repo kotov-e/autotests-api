@@ -24,9 +24,9 @@ class CreateUserRequestSchema(BaseModel):
     first_name: str = Field(alias="firstName",
                             default_factory=fake.first_name)
     last_name: str = Field(alias="lastName",
-                            default_factory=fake.last_name)
+                           default_factory=fake.last_name)
     middle_name: str = Field(alias="middleName",
-                            default_factory=fake.middle_name)
+                             default_factory=fake.middle_name)
     password: str = Field(default_factory=fake.password)
     email: EmailStr = Field(alias="email",
                             default_factory=fake.email)

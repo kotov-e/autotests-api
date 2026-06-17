@@ -39,18 +39,18 @@ def public_users_client() -> PublicUsersClient:
 def private_users_client(function_user: UserFixture) -> PrivateUsersClient:
     """
     Фикстура для работы с приватным API
-    :return:
+    :return: PrivateUsersClient
     """
     return get_private_users_client(user=function_user.authentication_user)
 
 
 @pytest.fixture
-def function_user(public_users_client: PublicUsersClient) -> UserFixture:  # называем фикстуру по scope=FUNCTION
+def function_user(public_users_client: PublicUsersClient) -> UserFixture:
     """
     Фикстура для создания пользователя
-    :param public_users_client:
+    :param public_users_client: PublicUsersClient
     :return: UserFixture возвращает и request и response
     """
-    create_user_request = CreateUserRequestSchema()  # данные для создания пользователя
-    response = public_users_client.create_user(create_user_request)  # создаем пользователя
-    return UserFixture(request=create_user_request, response=response)  # возвращает и request и response
+    create_user_request = CreateUserRequestSchema()
+    response = public_users_client.create_user(create_user_request)
+    return UserFixture(request=create_user_request, response=response)

@@ -1,6 +1,4 @@
 from pydantic import BaseModel, Field, ConfigDict
-
-from clients.files.files_schema import FileSchema
 from tools.fakers import fake
 
 
@@ -47,7 +45,6 @@ class GetCourseQuerySchema(BaseModel):
     """
     Структура запроса на получение заданий
     """
-
     course_id: str = Field(alias="courseId")
 
 
@@ -56,7 +53,6 @@ class GetExerciseQuerySchema(BaseModel):
     """
     Структура запроса на получение заданий
     """
-
     exercise_id: str = Field(alias="exerciseId")
 
 
@@ -65,7 +61,6 @@ class GetExerciseResponseSchema(BaseModel):
     Структура ответа на получение задания
     """
     exercises: list[ExerciseSchema]
-
 
 
 class GetExerciseIdResponseSchema(BaseModel):

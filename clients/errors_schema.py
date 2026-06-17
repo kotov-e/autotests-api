@@ -1,19 +1,3 @@
-"""
-{
-  "detail": [
-    {
-      "loc": [
-        "string",
-        0
-      ],
-      "msg": "string",
-      "type": "string"
-    }
-  ]
-}
-"""
-
-
 from pydantic import BaseModel, Field, ConfigDict
 from typing import Any
 
@@ -25,7 +9,7 @@ class ValidationErrorSchema(BaseModel):
 
     type: str
     input: Any
-    context: dict[str, Any] = Field(alias="ctx") # context читабельность - что такое ctx, мы указали alias
+    context: dict[str, Any] = Field(alias="ctx")
     message: str = Field(alias="msg")
     location:  list[str]= Field(alias="loc")
 

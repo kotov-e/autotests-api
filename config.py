@@ -41,4 +41,4 @@ class Settings(BaseSettings):
 
 # os.environ.setdefault("HTTP_CLIENT.TIMEOUT", "200") # приоритет: переменные окружения -> .env файл -> значения по умолчанию
 
-settings = Settings.initialize()  # глобальная переменная, не через фикстуру
+settings = Settings.initialize()

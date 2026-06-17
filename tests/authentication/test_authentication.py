@@ -1,6 +1,9 @@
+import httpx
 import pytest
 import allure
 from http import HTTPStatus
+
+from urllib3.contrib.emscripten import request
 
 from fixtures.users import UserFixture
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
@@ -37,3 +40,9 @@ class TestAuthentication:
         assert_login_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+
+
+
+

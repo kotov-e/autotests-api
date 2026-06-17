@@ -1,5 +1,4 @@
 import pytest
-
 from clients.authentication.authentication_client import get_authentication_client, AuthenticationClient
 
 

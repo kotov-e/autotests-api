@@ -1,7 +1,6 @@
 import pytest
 import allure
 from http import HTTPStatus
-
 from clients.errors_schema import ValidationErrorResponseSchema, InternalErrorResponseSchema
 from clients.files.files_client import FilesClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
@@ -63,7 +62,7 @@ class TestFiles:
     @allure.severity(Severity.NORMAL)
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
         delete_response = files_client.delete_file_api(
-            function_file.response.file.id)  # function_file - это фикстура, создаем файл, возвращаем его ид и удаляем
+            function_file.response.file.id)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)
 
         get_response = files_client.get_file_api(function_file.response.file.id)

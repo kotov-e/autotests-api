@@ -1,12 +1,10 @@
 import pytest
 import allure
-
 from fixtures.users import UserFixture
 from clients.users.private_users_client import PrivateUsersClient
 from clients.users.public_users_client import PublicUsersClient
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from http import HTTPStatus
-
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
@@ -27,26 +25,21 @@ from allure_commons.types import Severity
 @allure.suite(AllureFeature.USERS)
 class TestUsers:
 
-
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
-    @allure.tag(AllureTag.CREATE_ENTITY) # UPPERCASE_SNAKE_CASE
+    @allure.tag(AllureTag.CREATE_ENTITY)  # UPPERCASE_SNAKE_CASE
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Create user")
     @allure.severity(Severity.BLOCKER)
     @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_user(self, public_users_client: PublicUsersClient, email: str):
-        #allure.dynamic.title(f"Create user: {email}") # динамическое значение
         request = CreateUserRequestSchema(
             email=fake.email(domain=email)
         )
-        response = public_users_client.create_user_api(request)  # возвращает ответ от сервера
+        response = public_users_client.create_user_api(request)
         response_data = CreateUserResponseSchema.model_validate_json(
             response.text)  # если response.text не json, то будет ошибка, model_validate_json преобразует json в объект модели
 
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
-        # HTTPSStatus.OK = 200, HTTPStatus.BAD_REQUEST = 400, HTTPStatus.NOT_FOUND = 404, HTTPStatus.CREATED = 201, HTTPStatus.ACCEPTED = 202
-        # HTTPStatus.is_success = 200, 201, 202, 203, 204, 205, 206, 207, 208, 226
-        # HTTPStatus.is_success(response.status_code)
 
         assert_create_user_response(response_data, request)
 

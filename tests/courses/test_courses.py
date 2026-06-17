@@ -1,7 +1,6 @@
-from http import HTTPStatus
-
 import pytest
 import allure
+from http import HTTPStatus
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, GetCoursesQuerySchema, \
     GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema
