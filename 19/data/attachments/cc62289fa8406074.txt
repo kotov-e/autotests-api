@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/0401cf3a-06db-4799-a622-d04a8ef37951' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjAyLjM1MTAwNCIsInVzZXJfaWQiOiJhYzIxZmI0OC1hZDM2LTRiODYtODVjNC05MWVlMTY2NDljYzIifQ.SoOZ8GJC5pv074NXDxZEtvpyun7FfQ3SevGezbw1Dy8' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Maintain hotel spend have sit.","maxScore":64,"minScore":8,"description":"Message painting matter simple again operation cause. Big mission exactly development difficult. Conference whole oil security. May age ok notice up really.","estimatedTime":"4 weeks"}'

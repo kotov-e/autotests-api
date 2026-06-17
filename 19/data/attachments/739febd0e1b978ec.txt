@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/4011d2e8-bee1-4607-8723-bff072f2f5f9' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjA0Ljk4MjU4MCIsInVzZXJfaWQiOiIyOTE4YTEwNS1kMTI0LTRhZDctOTAyMS03NWFhODI5NjMwNDgifQ.loYC1v774zR2yztCNu5VkkqQqZgDHcfOmFySheleBZY' \
+  -H 'content-length: 188' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Development usually let page.","maxScore":71,"minScore":23,"orderIndex":37,"description":"Year leg unit size society. Forget enter middle out subject.","estimatedTime":"7 weeks"}'

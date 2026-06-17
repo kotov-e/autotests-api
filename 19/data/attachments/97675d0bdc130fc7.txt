@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjA0LjY3NDg1OSIsInVzZXJfaWQiOiI1NDZmMGJlOC1iYmNhLTQzMDUtOGRmZC00ODU5YWFmYjgwYTQifQ.EPfKIJDiyuxBUpMgriyINUhtRZpFcz1m4qmxr7VNk6M' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Coach mind term particular parent.","maxScore":59,"minScore":26,"description":"Heart price understand either whom.\nThreat property pass catch democratic. Election finish arm challenge inside where between.\nCard drug heart cover artist stock. Today room skin body.","estimatedTime":"10 weeks","previewFileId":"10e89de7-52d1-4ac8-8f53-1cdac09c4b50","createdByUserId":"546f0be8-bbca-4305-8dfd-4859aafb80a4"}'

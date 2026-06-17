@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjA2LjM1NzU0NiIsInVzZXJfaWQiOiI5ZjNjOWFkZi0yZWUyLTQ2MzQtOThiNy1hMzdjNjdiNGFhMDAifQ.JWmEPdHbDtClOMxhZ9qUs8yZwqI_yIdbYaGjn-d4P_g' \
+  -H 'content-length: 434' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Western somebody office bit name threat window.","maxScore":60,"minScore":19,"description":"Create indeed college medical Mrs. Because number product budget.\nCharacter something effort memory this everything worker. Western simple material huge reason never. Quickly popular prevent.","estimatedTime":"3 weeks","previewFileId":"0ed16036-a4e9-423d-8858-ce068ac4b597","createdByUserId":"9f3c9adf-2ee2-4634-98b7-a37c67b4aa00"}'

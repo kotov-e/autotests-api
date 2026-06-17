@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjA0Ljk4MjU4MCIsInVzZXJfaWQiOiIyOTE4YTEwNS1kMTI0LTRhZDctOTAyMS03NWFhODI5NjMwNDgifQ.loYC1v774zR2yztCNu5VkkqQqZgDHcfOmFySheleBZY' \
+  -H 'content-length: 388' \
+  -H 'content-type: application/json' \
+  -d '{"title":"And list say same almost remain.","maxScore":61,"minScore":7,"description":"Garden boy audience score perhaps medical. Watch central light laugh. Play list easy Mrs two.\nSerious step left since. After page compare side goal even realize.","estimatedTime":"7 weeks","previewFileId":"7518ba4f-c377-4ca8-ad0a-4929217ad981","createdByUserId":"2918a105-d124-4ad7-9021-75aa82963048"}'

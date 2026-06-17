@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjAzLjY3NTA4MiIsInVzZXJfaWQiOiJmN2I1MzVmZi1mYjVlLTQzM2EtOGJmZi1iZDkyNjcwZjAyNzQifQ.wHeaj8PzSKWF6FFmAMPt4PB9aQjc3BuIoF4Mn8GBpLs' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Political that would good main professional simple.","maxScore":54,"minScore":25,"description":"Develop over almost second suggest career miss. Season most assume act expect wall.\nOwn remember position put near figure son. However city even strong your lead message.","estimatedTime":"7 weeks","previewFileId":"ea663676-1e02-45a8-8082-6a53e67c9469","createdByUserId":"f7b535ff-fb5e-433a-8bff-bd92670f0274"}'

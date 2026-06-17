@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjAyLjA0NDU5NiIsInVzZXJfaWQiOiI5NzEwM2QwZi1iZTllLTQzMmEtOWY0My1lMDQyYTI4MmRiYzkifQ.1P-UQumnUkHSz9T0a3J7CggD0gc5GIxK9mdJrf-A8qU' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Again over wish fight tend recently.","maxScore":62,"minScore":21,"description":"Low should serious option. Hard beautiful without trouble yes.\nBeyond between key woman agency network doctor. Receive maybe success skill hear hair.","estimatedTime":"9 weeks","previewFileId":"fc056ea0-4ef3-4ac4-8886-801722c33f37","createdByUserId":"97103d0f-be9e-432a-9f43-e042a282dbc9"}'

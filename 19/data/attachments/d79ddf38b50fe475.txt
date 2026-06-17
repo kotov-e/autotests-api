@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjA2LjA0ODQyNCIsInVzZXJfaWQiOiJjNDlmNzZjMy02ODM0LTQzMDItODRkNi1iYjlmOTQ5OTMxMjIifQ.pIlRYkMjneJ-BRAboSrq4OSO4E1ZgDJwS25Wk0JlcZw' \
+  -H 'content-length: 305' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Between day society through tonight still.","courseId":"0ddf60b2-4ed7-4898-9126-c281a875ef0e","maxScore":91,"minScore":24,"orderIndex":1,"description":"Figure PM girl product ok. Democrat across prevent people interest possible. American high imagine maintain career.","estimatedTime":"6 weeks"}'

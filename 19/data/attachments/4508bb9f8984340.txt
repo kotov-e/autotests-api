@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjAyLjM1MTAwNCIsInVzZXJfaWQiOiJhYzIxZmI0OC1hZDM2LTRiODYtODVjNC05MWVlMTY2NDljYzIifQ.SoOZ8GJC5pv074NXDxZEtvpyun7FfQ3SevGezbw1Dy8' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rich buy audience word democratic event.","maxScore":93,"minScore":29,"description":"College including treatment treatment spring community business very. Continue design box answer.\nMyself class market thing church. Increase voice answer future message.","estimatedTime":"8 weeks","previewFileId":"d9f3248e-5c18-4c0d-a1be-6b6ffa62776d","createdByUserId":"ac21fb48-ad36-4b86-85c4-91ee16649cc2"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDA5OjU4OjAzLjM2NjE5NSIsInVzZXJfaWQiOiIzMGFiMGY5YS1hYTRhLTRkMWItYjU3Mi03NDVlODczOGZlMjUifQ.umw1xpy8I3GuKNTGmNa9Qvidv_sowpfCzOu-EUKrHeg' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":81,"minScore":10,"description":"Politics table mean record rich. Statement place information man myself. Mission nature prevent hear particularly event plant.\nItem whether take article. Brother much thus write.","estimatedTime":"10 weeks","previewFileId":"237c0eb5-52da-43d4-904a-ea76d41b41eb","createdByUserId":"30ab0f9a-aa4a-4d1b-b572-745e8738fe25"}'
