@@ -1,10 +1,6 @@
-import httpx
 import pytest
 import allure
 from http import HTTPStatus
-
-from urllib3.contrib.emscripten import request
-
 from fixtures.users import UserFixture
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
 from clients.authentication.authentication_client import AuthenticationClient
