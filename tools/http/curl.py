@@ -1,4 +1,4 @@
-from httpx import Request, RequestNotRead, post, Client
+from httpx import Request, RequestNotRead
 
 
 def make_curl_from_request(request: Request) -> str:

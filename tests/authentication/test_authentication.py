@@ -38,7 +38,3 @@ class TestAuthentication:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
-
-
-
-
