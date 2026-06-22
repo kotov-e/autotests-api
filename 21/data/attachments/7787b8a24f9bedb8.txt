@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjI0LjEzNDA0MiIsInVzZXJfaWQiOiI0NTczOTU2My0zMTZhLTRiYzctOGQwYy0wNjQxNjdlNGUzYTMifQ.Mdq-5dAmZpTgfH1y6rOsFzyxce-nJnr3TAhIU5dzwHE' \
+  -H 'content-length: 388' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Avoid what news attack.","maxScore":56,"minScore":9,"description":"Myself investment per once. When travel song hear him fund just.\nWant common tend make. Card everyone mouth away. Successful plan avoid five how relate others management.","estimatedTime":"8 weeks","previewFileId":"27f6e160-fe06-4470-bc56-842fe394aef4","createdByUserId":"45739563-316a-4bc7-8d0c-064167e4e3a3"}'

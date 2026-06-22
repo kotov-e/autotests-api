@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjIyLjkzNjk0OSIsInVzZXJfaWQiOiJlNDA3N2VlYi02MmJhLTQyYjMtYjNjZC1kMDI0YjczYTA2MWYifQ.rJAbRye-w7B1Zau2u3SZns6b1JOTNAVwBJqLUAbQUAE' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fall rate all table.","maxScore":65,"minScore":27,"description":"What politics service memory. Actually politics several another.\nChair level report play start within number art. Recently statement pay cell man use. Decide investment off parent language.","estimatedTime":"7 weeks","previewFileId":"f5e605d2-89d8-4158-a975-7e6972aa2b70","createdByUserId":"e4077eeb-62ba-42b3-b3cd-d024b73a061f"}'

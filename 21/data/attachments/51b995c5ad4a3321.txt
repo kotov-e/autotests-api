@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjIxLjUyNDYyNSIsInVzZXJfaWQiOiI1MWFhZGE3Yi04Y2UzLTQxYjctYmFhMS0wNGVlZmNlMzQ0OTkifQ.73LmFjPLogpB1cO6O8LpRLd6K13DqJAx8wtQKb3ENIo' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"asd","maxScore":65,"minScore":21,"description":"About reduce toward probably. Couple low foreign figure question thought quite.","estimatedTime":"2 weeks","previewFileId":"eda582e7-269c-4cc0-93f5-f1dc02eac091","createdByUserId":"51aada7b-8ce3-41b7-baa1-04eefce34499"}'

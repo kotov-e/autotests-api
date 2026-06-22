@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjI1LjA2Nzg4NyIsInVzZXJfaWQiOiI5MzRlY2Q5OS1kNTBiLTQ0NTgtYWU3Ni00MWZiZDlmNGU2ZDIifQ.MDtp4scienfjGguqhBhN9HKuxdRo2NCw-NehdHt-e4E' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Affect natural onto crime yet per control.","maxScore":54,"minScore":15,"description":"Argue among strategy drop. Low employee guy child rise.\nAuthority fish role effort should half enjoy. Watch into oil guess indicate officer reach candidate. Other voice agency my.","estimatedTime":"5 weeks","previewFileId":"b8a8c476-2035-43b7-bd35-b30e70c31d13","createdByUserId":"934ecd99-d50b-4458-ae76-41fbd9f4e6d2"}'

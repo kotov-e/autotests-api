@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjIzLjg2MDU0NiIsInVzZXJfaWQiOiJjZjk5N2Q3MC05ZDA0LTQyNzUtOTgwMS00ODMzYjdhMzc1MTcifQ.D3Vk6w_xoSrV13-Hxriqpfi0cIOGc7jYEjDpOkv59ac' \
+  -H 'content-length: 353' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Laugh particularly tax nation suggest although.","maxScore":51,"minScore":1,"description":"Dark should power nation produce. Sport research society material admit. Record anyone under sister raise offer.","estimatedTime":"1 weeks","previewFileId":"1edb8b65-57e3-44b0-baae-358b8eaaaf35","createdByUserId":"cf997d70-9d04-4275-9801-4833b7a37517"}'

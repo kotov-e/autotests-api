@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjI2LjI5NTMwOSIsInVzZXJfaWQiOiIwNzFhYTI2NS0xZjIyLTRmOTYtOWFjYS1mNTZiYTcyZWMxYzEifQ.TRE2exZjlL-VhZ5oachV2JEzYzvEmGhPigcxdsPLsSw' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Guy later yes down.","maxScore":71,"minScore":16,"description":"Region and him early. Middle building hot school sense protect. Forward common debate return.\nCareer mother city father five maintain.","estimatedTime":"1 weeks","previewFileId":"50d4ede7-b2e4-4e50-a383-9d2d28f2c71c","createdByUserId":"071aa265-1f22-4f96-9aca-f56ba72ec1c1"}'

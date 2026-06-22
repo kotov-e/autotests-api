@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/f7d16a05-6843-4309-b3eb-2abfa02cdad0
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/f7d16a05-6843-4309-b3eb-2abfa02cdad0
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code is equal to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:80 Check get exercise id response
+INFO     BASE_ASSERTIONS:base.py:35 Check that title equals to View little lose rest here arrive as.
+INFO     BASE_ASSERTIONS:base.py:35 Check that course_id equals to 335186be-cf25-4669-9c5c-89fb18e882b6
+INFO     BASE_ASSERTIONS:base.py:35 Check that max_score equals to 67
+INFO     BASE_ASSERTIONS:base.py:35 Check that min_score equals to 30
+INFO     BASE_ASSERTIONS:base.py:35 Check that order_index equals to 1
+INFO     BASE_ASSERTIONS:base.py:35 Check that description equals to Hour region friend could. Peace medical design.
+Need half reach never. History program three through animal. Determine plant enough writer listen.
+INFO     BASE_ASSERTIONS:base.py:35 Check that estimated_time equals to 6 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that id equals to f7d16a05-6843-4309-b3eb-2abfa02cdad0
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validation JSON schema

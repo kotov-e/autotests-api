@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjI1LjM0MjUyNCIsInVzZXJfaWQiOiIzMzUxNzllNC1kYmY0LTRmMjEtODBiNy01OGViN2QzMjRkNzcifQ.X9CeK8uetj7wuUdOTtT2Tj1Y1i5VZtr12d3dCVCnunc' \
+  -H 'content-length: 374' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Should another build enter safe care green.","maxScore":71,"minScore":17,"description":"Author could quickly wind difficult until discover special. Age information pretty million range. Body condition life exist car fine up.","estimatedTime":"7 weeks","previewFileId":"ad6e7a71-5b02-4859-af4b-d728f30ef3c7","createdByUserId":"335179e4-dbf4-4f21-80b7-58eb7d324d77"}'

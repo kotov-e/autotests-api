@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTIyVDA5OjQ1OjI2LjI5NTMwOSIsInVzZXJfaWQiOiIwNzFhYTI2NS0xZjIyLTRmOTYtOWFjYS1mNTZiYTcyZWMxYzEifQ.TRE2exZjlL-VhZ5oachV2JEzYzvEmGhPigcxdsPLsSw' \
+  -H 'content-length: 247' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Image seek line down.","courseId":"8940f9e6-8a6d-4419-9ba6-e70e4f8b77f1","maxScore":98,"minScore":2,"orderIndex":1,"description":"Look discuss receive might PM population above. Than different president trial.","estimatedTime":"3 weeks"}'
